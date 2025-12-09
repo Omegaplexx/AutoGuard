@@ -1,0 +1,4080 @@
+<TaskerData sr="" dvi="1" tv="6.6.4-beta">
+	<dmetric>1080.0,2340.0</dmetric>
+	<Profile sr="prof237" ve="2">
+		<cdate>1762751860284</cdate>
+		<clp>true</clp>
+		<edate>1763769310680</edate>
+		<flags>8</flags>
+		<id>237</id>
+		<limit>true</limit>
+		<mid0>191</mid0>
+		<mid1>199</mid1>
+		<nme>VPN as VPN</nme>
+		<State sr="con0" ve="2">
+			<code>136</code>
+			<Int sr="arg0" val="0"/>
+		</State>
+	</Profile>
+	<Profile sr="prof238" ve="2">
+		<cdate>1762751860285</cdate>
+		<clp>true</clp>
+		<edate>1763769310831</edate>
+		<flags>8</flags>
+		<id>238</id>
+		<limit>true</limit>
+		<mid0>201</mid0>
+		<nme>VPN as Proxy</nme>
+		<Event sr="con0" ve="2">
+			<code>2095</code>
+			<pri>0</pri>
+			<Bundle sr="arg0">
+				<Vals sr="val">
+					<net.dinglisch.android.tasker.RELEVANT_VARIABLES>&lt;StringArray sr=""/&gt;</net.dinglisch.android.tasker.RELEVANT_VARIABLES>
+					<net.dinglisch.android.tasker.RELEVANT_VARIABLES-type>[Ljava.lang.String;</net.dinglisch.android.tasker.RELEVANT_VARIABLES-type>
+				</Vals>
+			</Bundle>
+			<Str sr="arg1" ve="3">2000</Str>
+		</Event>
+	</Profile>
+	<Project sr="proj0" ve="2">
+		<cdate>1760944599610</cdate>
+		<name>AutoGuard</name>
+		<pids>238,237</pids>
+		<scenes>Setup 2,Setup 4,Hint Password,Setup 3,Setup 5,Hint Quiet,About,Home,Hint VPN as VPN,Hint Type,Hint Port,Settings,No AdGuard,Setup 1</scenes>
+		<tids>222,191,205,216,211,241,208,225,198,227,193,199,223,196,214,218,231,210,234,224,242,226,197,215,201,202,220,233,219,221,228,212,209,217,206,200,207,195,203,232,235,213,192,229,236,204,194,230</tids>
+		<Kid sr="Kid">
+			<eperm0>ACCESS_NETWORK_STATE</eperm0>
+			<eperm1>INTERNET</eperm1>
+			<eperm2>ACCESS_WIFI_STATE</eperm2>
+			<launchID>230</launchID>
+			<pkg>com.adguard.integration</pkg>
+			<vMin>21</vMin>
+			<vTarg>29</vTarg>
+			<vnme>1.0 β</vnme>
+			<vnum>111</vnum>
+		</Kid>
+		<Img sr="icon" ve="2">
+			<fle>/storage/emulated/0/Pictures/App Icons/AdGuard.png</fle>
+		</Img>
+	</Project>
+	<Scene sr="sceneAbout">
+		<cdate>1760943400314</cdate>
+		<edate>1762944486373</edate>
+		<gridSize>15</gridSize>
+		<heightLand>850</heightLand>
+		<heightPort>850</heightPort>
+		<nme>About</nme>
+		<widthLand>980</widthLand>
+		<widthPort>980</widthPort>
+		<RectElement sr="elements0">
+			<clickTask>231</clickTask>
+			<flags>4</flags>
+			<geom>0,0,979,119,-1,-1,-1,-1</geom>
+			<Str sr="arg0" ve="3">navbar</Str>
+			<Int sr="arg1" val="0"/>
+			<Str sr="arg2" ve="3">#FF35A300</Str>
+			<Str sr="arg3" ve="3"/>
+			<Int sr="arg4" val="0"/>
+			<Str sr="arg5" ve="3">#FF000000</Str>
+			<Int sr="arg6" val="0"/>
+			<Int sr="arg7" val="0"/>
+		</RectElement>
+		<ButtonElement sr="elements1" ve="3">
+			<clickTask>193</clickTask>
+			<flags>4</flags>
+			<geom>32,700,125,125,-1,-1,-1,-1</geom>
+			<Str sr="arg0" ve="3">to_home</Str>
+			<Str sr="arg1" ve="3"/>
+			<Int sr="arg2" val="29"/>
+			<Int sr="arg3" val="100"/>
+			<Str sr="arg4" ve="3">#FFFFFFFF</Str>
+			<Str sr="arg5" ve="3"/>
+			<Int sr="arg6" val="0"/>
+			<Img sr="arg7" ve="2">
+				<nme>mw_action_home</nme>
+			</Img>
+		</ButtonElement>
+		<TextElement sr="elements2" ve="3">
+			<flags>4</flags>
+			<geom>32,0,479,119,-1,-1,-1,-1</geom>
+			<Str sr="arg0" ve="3">about</Str>
+			<Str sr="arg1" ve="3">About</Str>
+			<Int sr="arg2" val="20"/>
+			<Int sr="arg3" val="100"/>
+			<Str sr="arg4" ve="3">#FFFFFFFF</Str>
+			<Str sr="arg5" ve="3"/>
+			<Int sr="arg6" val="3"/>
+			<Int sr="arg7" val="1"/>
+			<Int sr="arg8" val="0"/>
+			<RectElement sr="background">
+				<flags>4</flags>
+				<geom>-1,-1,-1,-1,-1,-1,-1,-1</geom>
+				<Str sr="arg0" ve="3"/>
+				<Int sr="arg1" val="0"/>
+				<Str sr="arg2" ve="3"/>
+				<Str sr="arg3" ve="3"/>
+				<Int sr="arg4" val="0"/>
+				<Str sr="arg5" ve="3">#FF000000</Str>
+				<Int sr="arg6" val="0"/>
+				<Int sr="arg7" val="0"/>
+			</RectElement>
+		</TextElement>
+		<TextElement sr="elements3" ve="3">
+			<flags>4</flags>
+			<geom>235,235,524,105,-1,-1,-1,-1</geom>
+			<Str sr="arg0" ve="3">by</Str>
+			<Str sr="arg1" ve="3">Created by Omegaplex</Str>
+			<Int sr="arg2" val="16"/>
+			<Int sr="arg3" val="100"/>
+			<Str sr="arg4" ve="3">#FFFFFFFF</Str>
+			<Str sr="arg5" ve="3"/>
+			<Int sr="arg6" val="0"/>
+			<Int sr="arg7" val="1"/>
+			<Int sr="arg8" val="0"/>
+		</TextElement>
+		<TextElement sr="elements4" ve="3">
+			<flags>4</flags>
+			<geom>192,395,610,276,-1,-1,-1,-1</geom>
+			<Str sr="arg0" ve="3">temp</Str>
+			<Str sr="arg1" ve="3">This screen isn't done yet, bc app in beta and blah blah
+idk does it even work on other devices lol</Str>
+			<Int sr="arg2" val="16"/>
+			<Int sr="arg3" val="100"/>
+			<Str sr="arg4" ve="3">#FFFFFFFF</Str>
+			<Str sr="arg5" ve="3"/>
+			<Int sr="arg6" val="0"/>
+			<Int sr="arg7" val="1"/>
+			<Int sr="arg8" val="0"/>
+		</TextElement>
+		<TextElement sr="elements5" ve="3">
+			<flags>4</flags>
+			<geom>710,745,245,105,-1,-1,-1,-1</geom>
+			<Str sr="arg0" ve="3">version</Str>
+			<Str sr="arg1" ve="3">1.0 β</Str>
+			<Int sr="arg2" val="16"/>
+			<Int sr="arg3" val="100"/>
+			<Str sr="arg4" ve="3">#FFFFFFFF</Str>
+			<Str sr="arg5" ve="3"/>
+			<Int sr="arg6" val="4"/>
+			<Int sr="arg7" val="0"/>
+			<Int sr="arg8" val="0"/>
+		</TextElement>
+		<PropertiesElement sr="props">
+			<Int sr="arg0" val="1"/>
+			<Int sr="arg1" val="0"/>
+			<Str sr="arg2" ve="3">#FF303030</Str>
+			<Int sr="arg3" val="0"/>
+			<Str sr="arg4" ve="3">Set</Str>
+			<Str sr="arg5" ve="3"/>
+			<Img sr="arg6" ve="2"/>
+			<Str sr="arg7" ve="3"/>
+		</PropertiesElement>
+	</Scene>
+	<Scene sr="sceneHint Password">
+		<cdate>1761007399901</cdate>
+		<edate>1762945245573</edate>
+		<gridSize>15</gridSize>
+		<heightLand>-1</heightLand>
+		<heightPort>495</heightPort>
+		<nme>Hint Password</nme>
+		<widthLand>-1</widthLand>
+		<widthPort>980</widthPort>
+		<TextElement sr="elements0" ve="3">
+			<flags>4</flags>
+			<geom>47,29,891,379,-1,-1,-1,-1</geom>
+			<Str sr="arg0" ve="3">password_text</Str>
+			<Str sr="arg1" ve="3">AdGuard automation password
+
+Allows this app to control proxy settings of AdGuard. You can find it in "Settings" → "General" → "Advanced" → "Automation". Copy the password and paste here</Str>
+			<Int sr="arg2" val="17"/>
+			<Int sr="arg3" val="100"/>
+			<Str sr="arg4" ve="3">#FFFFFFFF</Str>
+			<Str sr="arg5" ve="3"/>
+			<Int sr="arg6" val="5"/>
+			<Int sr="arg7" val="2"/>
+			<Int sr="arg8" val="0"/>
+			<RectElement sr="background">
+				<flags>4</flags>
+				<geom>-1,-1,-1,-1,-1,-1,-1,-1</geom>
+				<Str sr="arg0" ve="3"/>
+				<Int sr="arg1" val="0"/>
+				<Str sr="arg2" ve="3"/>
+				<Str sr="arg3" ve="3"/>
+				<Int sr="arg4" val="0"/>
+				<Str sr="arg5" ve="3">#FF000000</Str>
+				<Int sr="arg6" val="0"/>
+				<Int sr="arg7" val="0"/>
+			</RectElement>
+		</TextElement>
+		<ButtonElement sr="elements1" ve="3">
+			<clickTask>232</clickTask>
+			<flags>4</flags>
+			<geom>787,377,180,110,-1,-1,-1,-1</geom>
+			<Str sr="arg0" ve="3">password_hint_close</Str>
+			<Str sr="arg1" ve="3">OK</Str>
+			<Int sr="arg2" val="17"/>
+			<Int sr="arg3" val="100"/>
+			<Str sr="arg4" ve="3">#FFFFFFFF</Str>
+			<Str sr="arg5" ve="3"/>
+			<Int sr="arg6" val="0"/>
+			<Img sr="arg7" ve="2"/>
+		</ButtonElement>
+		<PropertiesElement sr="props">
+			<Int sr="arg0" val="1"/>
+			<Int sr="arg1" val="0"/>
+			<Str sr="arg2" ve="3">#FF303030</Str>
+			<Int sr="arg3" val="0"/>
+			<Str sr="arg4" ve="3">Setup</Str>
+			<Str sr="arg5" ve="3"/>
+			<Img sr="arg6" ve="2"/>
+			<Str sr="arg7" ve="3"/>
+		</PropertiesElement>
+	</Scene>
+	<Scene sr="sceneHint Port">
+		<cdate>1761007399901</cdate>
+		<edate>1762945253179</edate>
+		<gridSize>15</gridSize>
+		<heightLand>-1</heightLand>
+		<heightPort>600</heightPort>
+		<nme>Hint Port</nme>
+		<widthLand>-1</widthLand>
+		<widthPort>980</widthPort>
+		<TextElement sr="elements0" ve="3">
+			<flags>4</flags>
+			<geom>47,30,891,480,-1,-1,-1,-1</geom>
+			<Str sr="arg0" ve="3">port_text</Str>
+			<Str sr="arg1" ve="3">Inbound proxy port
+
+You need to enable the inbound proxy server in your VPN app and enter the server port here.
+
+When you connect to the VPN, the proxy will be started and AdGuard will filter its traffic.</Str>
+			<Int sr="arg2" val="17"/>
+			<Int sr="arg3" val="100"/>
+			<Str sr="arg4" ve="3">#FFFFFFFF</Str>
+			<Str sr="arg5" ve="3"/>
+			<Int sr="arg6" val="5"/>
+			<Int sr="arg7" val="2"/>
+			<Int sr="arg8" val="0"/>
+			<RectElement sr="background">
+				<flags>4</flags>
+				<geom>-1,-1,-1,-1,-1,-1,-1,-1</geom>
+				<Str sr="arg0" ve="3"/>
+				<Int sr="arg1" val="0"/>
+				<Str sr="arg2" ve="3"/>
+				<Str sr="arg3" ve="3"/>
+				<Int sr="arg4" val="0"/>
+				<Str sr="arg5" ve="3">#FF000000</Str>
+				<Int sr="arg6" val="0"/>
+				<Int sr="arg7" val="0"/>
+			</RectElement>
+		</TextElement>
+		<ButtonElement sr="elements1" ve="3">
+			<clickTask>235</clickTask>
+			<flags>4</flags>
+			<geom>787,480,180,110,-1,-1,-1,-1</geom>
+			<Str sr="arg0" ve="3">port_hint_close</Str>
+			<Str sr="arg1" ve="3">OK</Str>
+			<Int sr="arg2" val="17"/>
+			<Int sr="arg3" val="100"/>
+			<Str sr="arg4" ve="3">#FFFFFFFF</Str>
+			<Str sr="arg5" ve="3"/>
+			<Int sr="arg6" val="0"/>
+			<Img sr="arg7" ve="2"/>
+		</ButtonElement>
+		<PropertiesElement sr="props">
+			<Int sr="arg0" val="1"/>
+			<Int sr="arg1" val="0"/>
+			<Str sr="arg2" ve="3">#FF303030</Str>
+			<Int sr="arg3" val="0"/>
+			<Str sr="arg4" ve="3">Setup</Str>
+			<Str sr="arg5" ve="3"/>
+			<Img sr="arg6" ve="2"/>
+			<Str sr="arg7" ve="3"/>
+		</PropertiesElement>
+	</Scene>
+	<Scene sr="sceneHint Quiet">
+		<cdate>1761007399901</cdate>
+		<edate>1762944968963</edate>
+		<gridSize>15</gridSize>
+		<heightLand>-1</heightLand>
+		<heightPort>435</heightPort>
+		<nme>Hint Quiet</nme>
+		<widthLand>-1</widthLand>
+		<widthPort>980</widthPort>
+		<TextElement sr="elements0" ve="3">
+			<flags>4</flags>
+			<geom>47,35,891,305,-1,-1,-1,-1</geom>
+			<Str sr="arg0" ve="3">quiet_text</Str>
+			<Str sr="arg1" ve="3">Quiet mode
+
+Don't show pop-up messages (toasts) at the bottom of the screen when you connect to or disconnect from a proxy server.</Str>
+			<Int sr="arg2" val="17"/>
+			<Int sr="arg3" val="100"/>
+			<Str sr="arg4" ve="3">#FFFFFFFF</Str>
+			<Str sr="arg5" ve="3"/>
+			<Int sr="arg6" val="5"/>
+			<Int sr="arg7" val="2"/>
+			<Int sr="arg8" val="0"/>
+			<RectElement sr="background">
+				<flags>4</flags>
+				<geom>-1,-1,-1,-1,-1,-1,-1,-1</geom>
+				<Str sr="arg0" ve="3"/>
+				<Int sr="arg1" val="0"/>
+				<Str sr="arg2" ve="3"/>
+				<Str sr="arg3" ve="3"/>
+				<Int sr="arg4" val="0"/>
+				<Str sr="arg5" ve="3">#FF000000</Str>
+				<Int sr="arg6" val="0"/>
+				<Int sr="arg7" val="0"/>
+			</RectElement>
+		</TextElement>
+		<ButtonElement sr="elements1" ve="3">
+			<clickTask>213</clickTask>
+			<flags>4</flags>
+			<geom>787,315,180,110,-1,-1,-1,-1</geom>
+			<Str sr="arg0" ve="3">quiet_hint_close</Str>
+			<Str sr="arg1" ve="3">OK</Str>
+			<Int sr="arg2" val="17"/>
+			<Int sr="arg3" val="100"/>
+			<Str sr="arg4" ve="3">#FFFFFFFF</Str>
+			<Str sr="arg5" ve="3"/>
+			<Int sr="arg6" val="0"/>
+			<Img sr="arg7" ve="2"/>
+		</ButtonElement>
+		<PropertiesElement sr="props">
+			<Int sr="arg0" val="1"/>
+			<Int sr="arg1" val="0"/>
+			<Str sr="arg2" ve="3">#FF303030</Str>
+			<Int sr="arg3" val="0"/>
+			<Str sr="arg4" ve="3">Setup</Str>
+			<Str sr="arg5" ve="3"/>
+			<Img sr="arg6" ve="2"/>
+			<Str sr="arg7" ve="3"/>
+		</PropertiesElement>
+	</Scene>
+	<Scene sr="sceneHint Type">
+		<cdate>1761007399901</cdate>
+		<edate>1762952762360</edate>
+		<gridSize>15</gridSize>
+		<heightLand>-1</heightLand>
+		<heightPort>600</heightPort>
+		<nme>Hint Type</nme>
+		<widthLand>-1</widthLand>
+		<widthPort>980</widthPort>
+		<TextElement sr="elements0" ve="3">
+			<flags>4</flags>
+			<geom>47,30,891,480,-1,-1,-1,-1</geom>
+			<Str sr="arg0" ve="3">type_text</Str>
+			<Str sr="arg1" ve="3">Inbound proxy type
+
+Enable the inbound proxy server in your VPN app and enter the server type here.
+
+When you connect to the VPN, the proxy will be started and AdGuard will filter its traffic.</Str>
+			<Int sr="arg2" val="17"/>
+			<Int sr="arg3" val="100"/>
+			<Str sr="arg4" ve="3">#FFFFFFFF</Str>
+			<Str sr="arg5" ve="3"/>
+			<Int sr="arg6" val="5"/>
+			<Int sr="arg7" val="2"/>
+			<Int sr="arg8" val="0"/>
+			<RectElement sr="background">
+				<flags>4</flags>
+				<geom>-1,-1,-1,-1,-1,-1,-1,-1</geom>
+				<Str sr="arg0" ve="3"/>
+				<Int sr="arg1" val="0"/>
+				<Str sr="arg2" ve="3"/>
+				<Str sr="arg3" ve="3"/>
+				<Int sr="arg4" val="0"/>
+				<Str sr="arg5" ve="3">#FF000000</Str>
+				<Int sr="arg6" val="0"/>
+				<Int sr="arg7" val="0"/>
+			</RectElement>
+		</TextElement>
+		<ButtonElement sr="elements1" ve="3">
+			<clickTask>241</clickTask>
+			<flags>4</flags>
+			<geom>787,480,180,110,-1,-1,-1,-1</geom>
+			<Str sr="arg0" ve="3">quiet_hint_close</Str>
+			<Str sr="arg1" ve="3">OK</Str>
+			<Int sr="arg2" val="17"/>
+			<Int sr="arg3" val="100"/>
+			<Str sr="arg4" ve="3">#FFFFFFFF</Str>
+			<Str sr="arg5" ve="3"/>
+			<Int sr="arg6" val="0"/>
+			<Img sr="arg7" ve="2"/>
+		</ButtonElement>
+		<PropertiesElement sr="props">
+			<Int sr="arg0" val="1"/>
+			<Int sr="arg1" val="0"/>
+			<Str sr="arg2" ve="3">#FF303030</Str>
+			<Int sr="arg3" val="0"/>
+			<Str sr="arg4" ve="3">Setup</Str>
+			<Str sr="arg5" ve="3"/>
+			<Img sr="arg6" ve="2"/>
+			<Str sr="arg7" ve="3"/>
+		</PropertiesElement>
+	</Scene>
+	<Scene sr="sceneHint VPN as VPN">
+		<cdate>1761007399901</cdate>
+		<edate>1763770080917</edate>
+		<gridSize>15</gridSize>
+		<heightLand>-1</heightLand>
+		<heightPort>730</heightPort>
+		<nme>Hint VPN as VPN</nme>
+		<widthLand>-1</widthLand>
+		<widthPort>980</widthPort>
+		<TextElement sr="elements0" ve="3">
+			<flags>4</flags>
+			<geom>47,30,891,596,-1,-1,-1,-1</geom>
+			<Str sr="arg0" ve="3">vpn_as_vpn_text</Str>
+			<Str sr="arg1" ve="3">VPN app as VPN tunnel (root)
+
+Instead of constantly checking the availability of port %PORT, this app will only be activated when you enable/disable the VPN on your device.
+
+Useful only if your VPN app cannot work as proxy (only as VPN) but still supports inbound proxy.
+
+If your VPN app is running in VPN mode, you'll need to set AdGuard to Automatic Proxy mode (requires root).</Str>
+			<Int sr="arg2" val="15"/>
+			<Int sr="arg3" val="100"/>
+			<Str sr="arg4" ve="3">#FFFFFFFF</Str>
+			<Str sr="arg5" ve="3"/>
+			<Int sr="arg6" val="5"/>
+			<Int sr="arg7" val="2"/>
+			<Int sr="arg8" val="0"/>
+			<RectElement sr="background">
+				<flags>4</flags>
+				<geom>-1,-1,-1,-1,-1,-1,-1,-1</geom>
+				<Str sr="arg0" ve="3"/>
+				<Int sr="arg1" val="0"/>
+				<Str sr="arg2" ve="3"/>
+				<Str sr="arg3" ve="3"/>
+				<Int sr="arg4" val="0"/>
+				<Str sr="arg5" ve="3">#FF000000</Str>
+				<Int sr="arg6" val="0"/>
+				<Int sr="arg7" val="0"/>
+			</RectElement>
+		</TextElement>
+		<ButtonElement sr="elements1" ve="3">
+			<clickTask>214</clickTask>
+			<flags>4</flags>
+			<geom>787,611,180,110,-1,-1,-1,-1</geom>
+			<Str sr="arg0" ve="3">vpn_as_vpn_close</Str>
+			<Str sr="arg1" ve="3">OK</Str>
+			<Int sr="arg2" val="17"/>
+			<Int sr="arg3" val="100"/>
+			<Str sr="arg4" ve="3">#FFFFFFFF</Str>
+			<Str sr="arg5" ve="3"/>
+			<Int sr="arg6" val="0"/>
+			<Img sr="arg7" ve="2"/>
+		</ButtonElement>
+		<PropertiesElement sr="props">
+			<Int sr="arg0" val="1"/>
+			<Int sr="arg1" val="0"/>
+			<Str sr="arg2" ve="3">#FF303030</Str>
+			<Int sr="arg3" val="0"/>
+			<Str sr="arg4" ve="3">Setup</Str>
+			<Str sr="arg5" ve="3"/>
+			<Img sr="arg6" ve="2"/>
+			<Str sr="arg7" ve="3"/>
+		</PropertiesElement>
+	</Scene>
+	<Scene sr="sceneHome">
+		<cdate>1760924513382</cdate>
+		<edate>1763770175604</edate>
+		<gridSize>15</gridSize>
+		<heightLand>-1</heightLand>
+		<heightPort>850</heightPort>
+		<nme>Home</nme>
+		<widthLand>-1</widthLand>
+		<widthPort>980</widthPort>
+		<SwitchElement sr="elements0">
+			<checkchangeTask>197</checkchangeTask>
+			<flags>4</flags>
+			<geom>424,366,130,131,-1,-1,-1,-1</geom>
+			<Str sr="arg0" ve="3">main_switch</Str>
+			<Int sr="arg1" val="0"/>
+			<RectElement sr="background">
+				<flags>4</flags>
+				<geom>-1,-1,-1,-1,-1,-1,-1,-1</geom>
+				<Str sr="arg0" ve="3"/>
+				<Int sr="arg1" val="0"/>
+				<Str sr="arg2" ve="3"/>
+				<Str sr="arg3" ve="3"/>
+				<Int sr="arg4" val="0"/>
+				<Str sr="arg5" ve="3">#FF000000</Str>
+				<Int sr="arg6" val="0"/>
+				<Int sr="arg7" val="0"/>
+			</RectElement>
+		</SwitchElement>
+		<RectElement sr="elements1">
+			<flags>4</flags>
+			<geom>0,0,979,119,-1,-1,-1,-1</geom>
+			<Str sr="arg0" ve="3">navbar</Str>
+			<Int sr="arg1" val="0"/>
+			<Str sr="arg2" ve="3">#FF35A300</Str>
+			<Str sr="arg3" ve="3"/>
+			<Int sr="arg4" val="0"/>
+			<Str sr="arg5" ve="3">#FF000000</Str>
+			<Int sr="arg6" val="0"/>
+			<Int sr="arg7" val="0"/>
+		</RectElement>
+		<RectElement sr="elements2">
+			<clickTask>208</clickTask>
+			<flags>4</flags>
+			<geom>0,0,133,134,-1,-1,-1,-1</geom>
+			<Str sr="arg0" ve="3">exit_help</Str>
+			<Int sr="arg1" val="0"/>
+			<Str sr="arg2" ve="3">#00000000</Str>
+			<Str sr="arg3" ve="3"/>
+			<Int sr="arg4" val="0"/>
+			<Str sr="arg5" ve="3">#FF000000</Str>
+			<Int sr="arg6" val="0"/>
+			<Int sr="arg7" val="0"/>
+		</RectElement>
+		<TextElement sr="elements3" ve="3">
+			<flags>4</flags>
+			<geom>105,0,362,119,-1,-1,-1,-1</geom>
+			<Str sr="arg0" ve="3">app_name</Str>
+			<Str sr="arg1" ve="3">AutoGuard</Str>
+			<Int sr="arg2" val="20"/>
+			<Int sr="arg3" val="100"/>
+			<Str sr="arg4" ve="3">#FFFFFFFF</Str>
+			<Str sr="arg5" ve="3"/>
+			<Int sr="arg6" val="3"/>
+			<Int sr="arg7" val="1"/>
+			<Int sr="arg8" val="0"/>
+			<RectElement sr="background">
+				<flags>4</flags>
+				<geom>-1,-1,-1,-1,-1,-1,-1,-1</geom>
+				<Str sr="arg0" ve="3"/>
+				<Int sr="arg1" val="0"/>
+				<Str sr="arg2" ve="3"/>
+				<Str sr="arg3" ve="3"/>
+				<Int sr="arg4" val="0"/>
+				<Str sr="arg5" ve="3">#FF000000</Str>
+				<Int sr="arg6" val="0"/>
+				<Int sr="arg7" val="0"/>
+			</RectElement>
+		</TextElement>
+		<ButtonElement sr="elements4" ve="3">
+			<clickTask>233</clickTask>
+			<flags>4</flags>
+			<geom>32,700,125,125,-1,-1,-1,-1</geom>
+			<Str sr="arg0" ve="3">about</Str>
+			<Str sr="arg1" ve="3"/>
+			<Int sr="arg2" val="14"/>
+			<Int sr="arg3" val="100"/>
+			<Str sr="arg4" ve="3">#FF000000</Str>
+			<Str sr="arg5" ve="3"/>
+			<Int sr="arg6" val="0"/>
+			<Img sr="arg7" ve="2">
+				<nme>mw_action_info</nme>
+			</Img>
+		</ButtonElement>
+		<ButtonElement sr="elements5" ve="3">
+			<clickTask>236</clickTask>
+			<flags>4</flags>
+			<geom>831,700,125,125,-1,-1,-1,-1</geom>
+			<Str sr="arg0" ve="3">to_settings</Str>
+			<Str sr="arg1" ve="3"/>
+			<Int sr="arg2" val="16"/>
+			<Int sr="arg3" val="100"/>
+			<Str sr="arg4" ve="3">#FF000000</Str>
+			<Str sr="arg5" ve="3"/>
+			<Int sr="arg6" val="0"/>
+			<Img sr="arg7" ve="2">
+				<nme>mw_action_settings</nme>
+			</Img>
+		</ButtonElement>
+		<ImageElement sr="elements6" ve="2">
+			<clickTask>205</clickTask>
+			<flags>4</flags>
+			<geom>30,30,60,60,-1,-1,-1,-1</geom>
+			<Str sr="arg0" ve="3">exit</Str>
+			<Img sr="arg1" ve="2">
+				<nme>mw_navigation_arrow_back</nme>
+			</Img>
+			<Int sr="arg2" val="255"/>
+			<RectElement sr="background">
+				<flags>4</flags>
+				<geom>-1,-1,-1,-1,-1,-1,-1,-1</geom>
+				<Str sr="arg0" ve="3"/>
+				<Int sr="arg1" val="0"/>
+				<Str sr="arg2" ve="3"/>
+				<Str sr="arg3" ve="3"/>
+				<Int sr="arg4" val="0"/>
+				<Str sr="arg5" ve="3">#FF000000</Str>
+				<Int sr="arg6" val="0"/>
+				<Int sr="arg7" val="0"/>
+			</RectElement>
+		</ImageElement>
+		<TextElement sr="elements7" ve="3">
+			<flags>4</flags>
+			<geom>221,729,551,73,-1,-1,-1,-1</geom>
+			<longclickTask>198</longclickTask>
+			<Str sr="arg0" ve="3">address</Str>
+			<Str sr="arg1" ve="3">%TYPE://127.0.0.1:%PORT</Str>
+			<Int sr="arg2" val="16"/>
+			<Int sr="arg3" val="100"/>
+			<Str sr="arg4" ve="3">#FFFFFFFF</Str>
+			<Str sr="arg5" ve="3"/>
+			<Int sr="arg6" val="0"/>
+			<Int sr="arg7" val="1"/>
+			<Int sr="arg8" val="0"/>
+			<RectElement sr="background">
+				<flags>4</flags>
+				<geom>-1,-1,-1,-1,-1,-1,-1,-1</geom>
+				<Str sr="arg0" ve="3"/>
+				<Int sr="arg1" val="0"/>
+				<Str sr="arg2" ve="3"/>
+				<Str sr="arg3" ve="3"/>
+				<Int sr="arg4" val="0"/>
+				<Str sr="arg5" ve="3">#FF000000</Str>
+				<Int sr="arg6" val="0"/>
+				<Int sr="arg7" val="0"/>
+			</RectElement>
+		</TextElement>
+		<PropertiesElement sr="props">
+			<Int sr="arg0" val="1"/>
+			<Int sr="arg1" val="0"/>
+			<Str sr="arg2" ve="3">#FF303030</Str>
+			<Int sr="arg3" val="0"/>
+			<Str sr="arg4" ve="3">Vpn</Str>
+			<Str sr="arg5" ve="3"/>
+			<Img sr="arg6" ve="2"/>
+			<Str sr="arg7" ve="3"/>
+		</PropertiesElement>
+	</Scene>
+	<Scene sr="sceneNo AdGuard">
+		<cdate>1761007399901</cdate>
+		<edate>1762952851099</edate>
+		<gridSize>15</gridSize>
+		<heightLand>-1</heightLand>
+		<heightPort>780</heightPort>
+		<nme>No AdGuard</nme>
+		<widthLand>-1</widthLand>
+		<widthPort>980</widthPort>
+		<TextElement sr="elements0" ve="3">
+			<flags>4</flags>
+			<geom>47,33,891,625,-1,-1,-1,-1</geom>
+			<Str sr="arg0" ve="3">port_text</Str>
+			<Str sr="arg1" ve="3">AdGuard isn't installed
+
+This app is designed to automate the actions of AdGuard for Android. You may have installed AdGuard Content Blocker from the Play Store, but this is a different app and it's not supported.
+
+You can download AdGuard from the official website: https://adguard.com/adguard-android/overview.html</Str>
+			<Int sr="arg2" val="17"/>
+			<Int sr="arg3" val="100"/>
+			<Str sr="arg4" ve="3">#FFFFFFFF</Str>
+			<Str sr="arg5" ve="3"/>
+			<Int sr="arg6" val="5"/>
+			<Int sr="arg7" val="2"/>
+			<Int sr="arg8" val="1"/>
+			<RectElement sr="background">
+				<flags>4</flags>
+				<geom>-1,-1,-1,-1,-1,-1,-1,-1</geom>
+				<Str sr="arg0" ve="3"/>
+				<Int sr="arg1" val="0"/>
+				<Str sr="arg2" ve="3"/>
+				<Str sr="arg3" ve="3"/>
+				<Int sr="arg4" val="0"/>
+				<Str sr="arg5" ve="3">#FF000000</Str>
+				<Int sr="arg6" val="0"/>
+				<Int sr="arg7" val="0"/>
+			</RectElement>
+		</TextElement>
+		<ButtonElement sr="elements1" ve="3">
+			<clickTask>242</clickTask>
+			<flags>4</flags>
+			<geom>787,657,180,110,-1,-1,-1,-1</geom>
+			<Str sr="arg0" ve="3">no_adguard_close</Str>
+			<Str sr="arg1" ve="3">OK</Str>
+			<Int sr="arg2" val="17"/>
+			<Int sr="arg3" val="100"/>
+			<Str sr="arg4" ve="3">#FFFFFFFF</Str>
+			<Str sr="arg5" ve="3"/>
+			<Int sr="arg6" val="0"/>
+			<Img sr="arg7" ve="2"/>
+		</ButtonElement>
+		<PropertiesElement sr="props">
+			<Int sr="arg0" val="1"/>
+			<Int sr="arg1" val="0"/>
+			<Str sr="arg2" ve="3">#FF303030</Str>
+			<Int sr="arg3" val="0"/>
+			<Str sr="arg4" ve="3">Setup</Str>
+			<Str sr="arg5" ve="3"/>
+			<Img sr="arg6" ve="2"/>
+			<Str sr="arg7" ve="3"/>
+		</PropertiesElement>
+	</Scene>
+	<Scene sr="sceneSettings">
+		<cdate>1760943400314</cdate>
+		<edate>1762944150113</edate>
+		<gridSize>15</gridSize>
+		<heightLand>850</heightLand>
+		<heightPort>850</heightPort>
+		<nme>Settings</nme>
+		<widthLand>980</widthLand>
+		<widthPort>980</widthPort>
+		<TextElement sr="elements0" ve="3">
+			<flags>4</flags>
+			<geom>32,119,929,625,-1,-1,-1,-1</geom>
+			<Str sr="arg0" ve="3">bg_text</Str>
+			<Str sr="arg1" ve="3"/>
+			<Int sr="arg2" val="17"/>
+			<Int sr="arg3" val="100"/>
+			<Str sr="arg4" ve="3">#FFFFFFFF</Str>
+			<Str sr="arg5" ve="3"/>
+			<Int sr="arg6" val="5"/>
+			<Int sr="arg7" val="2"/>
+			<Int sr="arg8" val="0"/>
+			<RectElement sr="background">
+				<flags>4</flags>
+				<geom>-1,-1,-1,-1,-1,-1,-1,-1</geom>
+				<Str sr="arg0" ve="3"/>
+				<Int sr="arg1" val="0"/>
+				<Str sr="arg2" ve="3"/>
+				<Str sr="arg3" ve="3"/>
+				<Int sr="arg4" val="0"/>
+				<Str sr="arg5" ve="3">#FF000000</Str>
+				<Int sr="arg6" val="0"/>
+				<Int sr="arg7" val="0"/>
+			</RectElement>
+		</TextElement>
+		<RectElement sr="elements1">
+			<clickTask>207</clickTask>
+			<flags>4</flags>
+			<geom>0,0,979,119,-1,-1,-1,-1</geom>
+			<Str sr="arg0" ve="3">navbar</Str>
+			<Int sr="arg1" val="0"/>
+			<Str sr="arg2" ve="3">#FF35A300</Str>
+			<Str sr="arg3" ve="3"/>
+			<Int sr="arg4" val="0"/>
+			<Str sr="arg5" ve="3">#FF000000</Str>
+			<Int sr="arg6" val="0"/>
+			<Int sr="arg7" val="0"/>
+		</RectElement>
+		<TextElement sr="elements10" ve="3">
+			<flags>4</flags>
+			<geom>32,0,479,119,-1,-1,-1,-1</geom>
+			<Str sr="arg0" ve="3">settings</Str>
+			<Str sr="arg1" ve="3">Settings</Str>
+			<Int sr="arg2" val="20"/>
+			<Int sr="arg3" val="100"/>
+			<Str sr="arg4" ve="3">#FFFFFFFF</Str>
+			<Str sr="arg5" ve="3"/>
+			<Int sr="arg6" val="3"/>
+			<Int sr="arg7" val="1"/>
+			<Int sr="arg8" val="0"/>
+			<RectElement sr="background">
+				<flags>4</flags>
+				<geom>-1,-1,-1,-1,-1,-1,-1,-1</geom>
+				<Str sr="arg0" ve="3"/>
+				<Int sr="arg1" val="0"/>
+				<Str sr="arg2" ve="3"/>
+				<Str sr="arg3" ve="3"/>
+				<Int sr="arg4" val="0"/>
+				<Str sr="arg5" ve="3">#FF000000</Str>
+				<Int sr="arg6" val="0"/>
+				<Int sr="arg7" val="0"/>
+			</RectElement>
+		</TextElement>
+		<SwitchElement sr="elements11">
+			<checkchangeTask>228</checkchangeTask>
+			<flags>4</flags>
+			<geom>511,410,130,88,-1,-1,-1,-1</geom>
+			<Str sr="arg0" ve="3">vpn_as_vpn</Str>
+			<Int sr="arg1" val="0"/>
+			<RectElement sr="background">
+				<flags>4</flags>
+				<geom>-1,-1,-1,-1,-1,-1,-1,-1</geom>
+				<Str sr="arg0" ve="3"/>
+				<Int sr="arg1" val="0"/>
+				<Str sr="arg2" ve="3"/>
+				<Str sr="arg3" ve="3">#80FFFFFF</Str>
+				<Int sr="arg4" val="0"/>
+				<Str sr="arg5" ve="3"/>
+				<Int sr="arg6" val="12"/>
+				<Int sr="arg7" val="0"/>
+			</RectElement>
+		</SwitchElement>
+		<TextElement sr="elements12" ve="3">
+			<clickTask>212</clickTask>
+			<flags>4</flags>
+			<geom>163,410,304,88,-1,-1,-1,-1</geom>
+			<Str sr="arg0" ve="3">vpn_as_vpn_text</Str>
+			<Str sr="arg1" ve="3">VPN as VPN</Str>
+			<Int sr="arg2" val="18"/>
+			<Int sr="arg3" val="100"/>
+			<Str sr="arg4" ve="3">#FFFFFFFF</Str>
+			<Str sr="arg5" ve="3"/>
+			<Int sr="arg6" val="4"/>
+			<Int sr="arg7" val="1"/>
+			<Int sr="arg8" val="0"/>
+		</TextElement>
+		<SpinnerElement sr="elements13">
+			<flags>4</flags>
+			<geom>524,235,280,88,-1,-1,-1,-1</geom>
+			<itemselectedTask>206</itemselectedTask>
+			<Str sr="arg0" ve="3">type</Str>
+			<Int sr="arg1" val="1"/>
+			<Str sr="arg2" ve="3">%TYPE</Str>
+			<Scene sr="arg3">
+				<Scene sr="val">
+					<cdate>1761515432210</cdate>
+					<edate>1761515432210</edate>
+					<gridSize>10</gridSize>
+					<heightLand>-1</heightLand>
+					<heightPort>88</heightPort>
+					<nme>spinner</nme>
+					<widthLand>-1</widthLand>
+					<widthPort>280</widthPort>
+					<ImageElement sr="elements0" ve="2">
+						<flags>1</flags>
+						<geom>27,0,153,84,-1,-1,-1,-1</geom>
+						<Str sr="arg0" ve="3">Icon</Str>
+						<Img sr="arg1" ve="2">
+							<nme>cust_bolt_white</nme>
+						</Img>
+						<Int sr="arg2" val="255"/>
+					</ImageElement>
+					<TextElement sr="elements1" ve="3">
+						<flags>5</flags>
+						<geom>0,0,280,88,-1,-1,-1,-1</geom>
+						<Str sr="arg0" ve="3">Label</Str>
+						<Str sr="arg1" ve="3">Tэxt</Str>
+						<Int sr="arg2" val="17"/>
+						<Int sr="arg3" val="100"/>
+						<Str sr="arg4" ve="3">#FFFFFFFF</Str>
+						<Str sr="arg5" ve="3"/>
+						<Int sr="arg6" val="3"/>
+						<Int sr="arg7" val="1"/>
+						<Int sr="arg8" val="0"/>
+						<RectElement sr="background">
+							<flags>4</flags>
+							<geom>-1,-1,-1,-1,-1,-1,-1,-1</geom>
+							<Str sr="arg0" ve="3"/>
+							<Int sr="arg1" val="0"/>
+							<Str sr="arg2" ve="3"/>
+							<Str sr="arg3" ve="3"/>
+							<Int sr="arg4" val="0"/>
+							<Str sr="arg5" ve="3">#FF000000</Str>
+							<Int sr="arg6" val="0"/>
+							<Int sr="arg7" val="0"/>
+						</RectElement>
+					</TextElement>
+					<TextElement sr="elements2" ve="3">
+						<flags>1</flags>
+						<geom>127,0,53,83,-1,-1,-1,-1</geom>
+						<Str sr="arg0" ve="3">Index</Str>
+						<Str sr="arg1" ve="3">1.</Str>
+						<Int sr="arg2" val="22"/>
+						<Int sr="arg3" val="100"/>
+						<Str sr="arg4" ve="3">#FFFFFFFF</Str>
+						<Str sr="arg5" ve="3"/>
+						<Int sr="arg6" val="3"/>
+						<Int sr="arg7" val="0"/>
+						<Int sr="arg8" val="0"/>
+					</TextElement>
+					<PropertiesElement sr="props">
+						<Int sr="arg0" val="1"/>
+						<Int sr="arg1" val="0"/>
+						<Str sr="arg2" ve="3">#00000000</Str>
+						<Int sr="arg3" val="0"/>
+						<Str sr="arg4" ve="3">spinner</Str>
+						<Str sr="arg5" ve="3"/>
+						<Img sr="arg6" ve="2"/>
+						<Str sr="arg7" ve="3"/>
+					</PropertiesElement>
+				</Scene>
+			</Scene>
+			<Str sr="arg4" ve="3">#FF404040</Str>
+		</SpinnerElement>
+		<TextElement sr="elements14" ve="3">
+			<clickTask>209</clickTask>
+			<flags>4</flags>
+			<geom>308,235,159,88,-1,-1,-1,-1</geom>
+			<Str sr="arg0" ve="3">type_text</Str>
+			<Str sr="arg1" ve="3">Type</Str>
+			<Int sr="arg2" val="18"/>
+			<Int sr="arg3" val="100"/>
+			<Str sr="arg4" ve="3">#FFFFFFFF</Str>
+			<Str sr="arg5" ve="3"/>
+			<Int sr="arg6" val="4"/>
+			<Int sr="arg7" val="1"/>
+			<Int sr="arg8" val="0"/>
+			<RectElement sr="background">
+				<flags>4</flags>
+				<geom>-1,-1,-1,-1,-1,-1,-1,-1</geom>
+				<Str sr="arg0" ve="3"/>
+				<Int sr="arg1" val="0"/>
+				<Str sr="arg2" ve="3"/>
+				<Str sr="arg3" ve="3"/>
+				<Int sr="arg4" val="0"/>
+				<Str sr="arg5" ve="3">#FF000000</Str>
+				<Int sr="arg6" val="0"/>
+				<Int sr="arg7" val="0"/>
+			</RectElement>
+		</TextElement>
+		<ButtonElement sr="elements2" ve="3">
+			<clickTask>192</clickTask>
+			<flags>4</flags>
+			<geom>831,700,125,125,-1,-1,-1,-1</geom>
+			<Str sr="arg0" ve="3">to_home</Str>
+			<Str sr="arg1" ve="3"/>
+			<Int sr="arg2" val="16"/>
+			<Int sr="arg3" val="100"/>
+			<Str sr="arg4" ve="3">#FF000000</Str>
+			<Str sr="arg5" ve="3"/>
+			<Int sr="arg6" val="0"/>
+			<Img sr="arg7" ve="2">
+				<nme>mw_action_home</nme>
+			</Img>
+		</ButtonElement>
+		<TextElement sr="elements3" ve="3">
+			<clickTask>211</clickTask>
+			<flags>4</flags>
+			<geom>308,497,159,88,-1,-1,-1,-1</geom>
+			<Str sr="arg0" ve="3">quiet_text</Str>
+			<Str sr="arg1" ve="3">Quiet</Str>
+			<Int sr="arg2" val="18"/>
+			<Int sr="arg3" val="100"/>
+			<Str sr="arg4" ve="3">#FFFFFFFF</Str>
+			<Str sr="arg5" ve="3"/>
+			<Int sr="arg6" val="4"/>
+			<Int sr="arg7" val="1"/>
+			<Int sr="arg8" val="0"/>
+		</TextElement>
+		<SwitchElement sr="elements4">
+			<checkchangeTask>195</checkchangeTask>
+			<flags>4</flags>
+			<geom>511,497,130,88,-1,-1,-1,-1</geom>
+			<Str sr="arg0" ve="3">quiet</Str>
+			<Int sr="arg1" val="0"/>
+			<RectElement sr="background">
+				<flags>4</flags>
+				<geom>-1,-1,-1,-1,-1,-1,-1,-1</geom>
+				<Str sr="arg0" ve="3"/>
+				<Int sr="arg1" val="0"/>
+				<Str sr="arg2" ve="3"/>
+				<Str sr="arg3" ve="3">#80FFFFFF</Str>
+				<Int sr="arg4" val="0"/>
+				<Str sr="arg5" ve="3"/>
+				<Int sr="arg6" val="12"/>
+				<Int sr="arg7" val="0"/>
+			</RectElement>
+		</SwitchElement>
+		<EditTextElement sr="elements5" ve="3">
+			<flags>4</flags>
+			<focuschangeTask>210</focuschangeTask>
+			<geom>526,323,392,88,-1,-1,-1,-1</geom>
+			<valueselectedTask>202</valueselectedTask>
+			<Str sr="arg0" ve="3">port</Str>
+			<Str sr="arg1" ve="3">%PORT</Str>
+			<Int sr="arg2" val="18"/>
+			<Int sr="arg3" val="105"/>
+			<Str sr="arg4" ve="3">#FFFFFFFF</Str>
+			<Str sr="arg5" ve="3"/>
+			<Int sr="arg6" val="3"/>
+			<Int sr="arg7" val="3"/>
+			<Int sr="arg8" val="5"/>
+			<RectElement sr="background">
+				<flags>4</flags>
+				<geom>-1,-1,-1,-1,-1,-1,-1,-1</geom>
+				<Str sr="arg0" ve="3"/>
+				<Int sr="arg1" val="0"/>
+				<Str sr="arg2" ve="3"/>
+				<Str sr="arg3" ve="3"/>
+				<Int sr="arg4" val="0"/>
+				<Str sr="arg5" ve="3">#FF000000</Str>
+				<Int sr="arg6" val="0"/>
+				<Int sr="arg7" val="0"/>
+			</RectElement>
+		</EditTextElement>
+		<EditTextElement sr="elements6" ve="3">
+			<flags>4</flags>
+			<geom>526,148,395,88,-1,-1,-1,-1</geom>
+			<valueselectedTask>203</valueselectedTask>
+			<Str sr="arg0" ve="3">password</Str>
+			<Str sr="arg1" ve="3">%PASS</Str>
+			<Int sr="arg2" val="18"/>
+			<Int sr="arg3" val="105"/>
+			<Str sr="arg4" ve="3">#FFFFFFFF</Str>
+			<Str sr="arg5" ve="3"/>
+			<Int sr="arg6" val="3"/>
+			<Int sr="arg7" val="5"/>
+			<Int sr="arg8" val="20"/>
+			<RectElement sr="background">
+				<flags>4</flags>
+				<geom>-1,-1,-1,-1,-1,-1,-1,-1</geom>
+				<Str sr="arg0" ve="3"/>
+				<Int sr="arg1" val="0"/>
+				<Str sr="arg2" ve="3"/>
+				<Str sr="arg3" ve="3"/>
+				<Int sr="arg4" val="0"/>
+				<Str sr="arg5" ve="3">#FF000000</Str>
+				<Int sr="arg6" val="0"/>
+				<Int sr="arg7" val="0"/>
+			</RectElement>
+		</EditTextElement>
+		<TextElement sr="elements7" ve="3">
+			<clickTask>196</clickTask>
+			<flags>4</flags>
+			<geom>308,323,159,88,-1,-1,-1,-1</geom>
+			<Str sr="arg0" ve="3">port_text</Str>
+			<Str sr="arg1" ve="3">Port</Str>
+			<Int sr="arg2" val="18"/>
+			<Int sr="arg3" val="100"/>
+			<Str sr="arg4" ve="3">#FFFFFFFF</Str>
+			<Str sr="arg5" ve="3"/>
+			<Int sr="arg6" val="4"/>
+			<Int sr="arg7" val="1"/>
+			<Int sr="arg8" val="0"/>
+			<RectElement sr="background">
+				<flags>4</flags>
+				<geom>-1,-1,-1,-1,-1,-1,-1,-1</geom>
+				<Str sr="arg0" ve="3"/>
+				<Int sr="arg1" val="0"/>
+				<Str sr="arg2" ve="3"/>
+				<Str sr="arg3" ve="3"/>
+				<Int sr="arg4" val="0"/>
+				<Str sr="arg5" ve="3">#FF000000</Str>
+				<Int sr="arg6" val="0"/>
+				<Int sr="arg7" val="0"/>
+			</RectElement>
+		</TextElement>
+		<ButtonElement sr="elements8" ve="3">
+			<clickTask>204</clickTask>
+			<flags>4</flags>
+			<geom>32,700,125,125,-1,-1,-1,-1</geom>
+			<Str sr="arg0" ve="3">show_setup</Str>
+			<Str sr="arg1" ve="3"/>
+			<Int sr="arg2" val="29"/>
+			<Int sr="arg3" val="100"/>
+			<Str sr="arg4" ve="3">#FFFFFFFF</Str>
+			<Str sr="arg5" ve="3"/>
+			<Int sr="arg6" val="0"/>
+			<Img sr="arg7" ve="2">
+				<nme>mw_action_info_outline</nme>
+			</Img>
+		</ButtonElement>
+		<TextElement sr="elements9" ve="3">
+			<clickTask>234</clickTask>
+			<flags>4</flags>
+			<geom>206,148,261,88,-1,-1,-1,-1</geom>
+			<Str sr="arg0" ve="3">password_text</Str>
+			<Str sr="arg1" ve="3">Password</Str>
+			<Int sr="arg2" val="18"/>
+			<Int sr="arg3" val="100"/>
+			<Str sr="arg4" ve="3">#FFFFFFFF</Str>
+			<Str sr="arg5" ve="3"/>
+			<Int sr="arg6" val="4"/>
+			<Int sr="arg7" val="1"/>
+			<Int sr="arg8" val="0"/>
+			<RectElement sr="background">
+				<flags>4</flags>
+				<geom>-1,-1,-1,-1,-1,-1,-1,-1</geom>
+				<Str sr="arg0" ve="3"/>
+				<Int sr="arg1" val="0"/>
+				<Str sr="arg2" ve="3"/>
+				<Str sr="arg3" ve="3"/>
+				<Int sr="arg4" val="0"/>
+				<Str sr="arg5" ve="3">#FF000000</Str>
+				<Int sr="arg6" val="0"/>
+				<Int sr="arg7" val="0"/>
+			</RectElement>
+		</TextElement>
+		<PropertiesElement sr="props">
+			<Int sr="arg0" val="1"/>
+			<Int sr="arg1" val="0"/>
+			<Str sr="arg2" ve="3">#FF303030</Str>
+			<Int sr="arg3" val="0"/>
+			<Str sr="arg4" ve="3">Set</Str>
+			<Str sr="arg5" ve="3"/>
+			<Img sr="arg6" ve="2"/>
+			<Str sr="arg7" ve="3"/>
+		</PropertiesElement>
+	</Scene>
+	<Scene sr="sceneSetup 1">
+		<cdate>1761007399901</cdate>
+		<edate>1762938454241</edate>
+		<gridSize>15</gridSize>
+		<heightLand>-1</heightLand>
+		<heightPort>670</heightPort>
+		<nme>Setup 1</nme>
+		<widthLand>-1</widthLand>
+		<widthPort>980</widthPort>
+		<TextElement sr="elements0" ve="3">
+			<flags>4</flags>
+			<geom>47,29,891,523,-1,-1,-1,-1</geom>
+			<Str sr="arg0" ve="3">setup_text</Str>
+			<Str sr="arg1" ve="3">Hi!
+
+This small app will help you integrate AdGuard with various VPN clients, so think of it as advanced AdGuard + AdGuard VPN Integrated mode.</Str>
+			<Int sr="arg2" val="17"/>
+			<Int sr="arg3" val="100"/>
+			<Str sr="arg4" ve="3">#FFFFFFFF</Str>
+			<Str sr="arg5" ve="3"/>
+			<Int sr="arg6" val="5"/>
+			<Int sr="arg7" val="2"/>
+			<Int sr="arg8" val="0"/>
+			<RectElement sr="background">
+				<flags>4</flags>
+				<geom>-1,-1,-1,-1,-1,-1,-1,-1</geom>
+				<Str sr="arg0" ve="3"/>
+				<Int sr="arg1" val="0"/>
+				<Str sr="arg2" ve="3"/>
+				<Str sr="arg3" ve="3"/>
+				<Int sr="arg4" val="0"/>
+				<Str sr="arg5" ve="3">#FF000000</Str>
+				<Int sr="arg6" val="0"/>
+				<Int sr="arg7" val="0"/>
+			</RectElement>
+		</TextElement>
+		<ButtonElement sr="elements1" ve="3">
+			<clickTask>200</clickTask>
+			<flags>4</flags>
+			<geom>787,552,180,110,-1,-1,-1,-1</geom>
+			<Str sr="arg0" ve="3">setup_next</Str>
+			<Str sr="arg1" ve="3">Next</Str>
+			<Int sr="arg2" val="17"/>
+			<Int sr="arg3" val="100"/>
+			<Str sr="arg4" ve="3">#FFFFFFFF</Str>
+			<Str sr="arg5" ve="3"/>
+			<Int sr="arg6" val="0"/>
+			<Img sr="arg7" ve="2"/>
+		</ButtonElement>
+		<TextElement sr="elements2" ve="3">
+			<flags>4</flags>
+			<geom>410,567,145,88,-1,-1,-1,-1</geom>
+			<Str sr="arg0" ve="3">setup_progress_1</Str>
+			<Str sr="arg1" ve="3">1/5</Str>
+			<Int sr="arg2" val="16"/>
+			<Int sr="arg3" val="100"/>
+			<Str sr="arg4" ve="3">#A0FFFFFF</Str>
+			<Str sr="arg5" ve="3"/>
+			<Int sr="arg6" val="0"/>
+			<Int sr="arg7" val="0"/>
+			<Int sr="arg8" val="0"/>
+		</TextElement>
+		<ButtonElement sr="elements3" ve="3">
+			<clickTask>217</clickTask>
+			<flags>4</flags>
+			<geom>14,552,180,110,-1,-1,-1,-1</geom>
+			<Str sr="arg0" ve="3">setup_prev</Str>
+			<Str sr="arg1" ve="3">Quit</Str>
+			<Int sr="arg2" val="17"/>
+			<Int sr="arg3" val="100"/>
+			<Str sr="arg4" ve="3">#FFFFFFFF</Str>
+			<Str sr="arg5" ve="3"/>
+			<Int sr="arg6" val="0"/>
+			<Img sr="arg7" ve="2"/>
+		</ButtonElement>
+		<PropertiesElement sr="props">
+			<Int sr="arg0" val="1"/>
+			<Int sr="arg1" val="0"/>
+			<Str sr="arg2" ve="3">#FF303030</Str>
+			<Int sr="arg3" val="0"/>
+			<Str sr="arg4" ve="3">Setup</Str>
+			<Str sr="arg5" ve="3"/>
+			<Img sr="arg6" ve="2"/>
+			<Str sr="arg7" ve="3"/>
+		</PropertiesElement>
+	</Scene>
+	<Scene sr="sceneSetup 2">
+		<cdate>1761007399901</cdate>
+		<edate>1763769485863</edate>
+		<gridSize>15</gridSize>
+		<heightLand>-1</heightLand>
+		<heightPort>670</heightPort>
+		<nme>Setup 2</nme>
+		<widthLand>-1</widthLand>
+		<widthPort>980</widthPort>
+		<TextElement sr="elements0" ve="3">
+			<flags>4</flags>
+			<geom>47,29,891,523,-1,-1,-1,-1</geom>
+			<Str sr="arg0" ve="3">setup_text</Str>
+			<Str sr="arg1" ve="3">Only those VPN apps are supported that can work in proxy mode (without creating a VPN tunnel on your device). It usually supported by advanced VPN clients:
+
+Hiddify, Shadowsocks, Nekobox, husi, Exclave, v2rayNG, Karing, Clash, WG Tunnel, Psiphon, Orbot, InviZible Pro, ByeByeDPI and many more.</Str>
+			<Int sr="arg2" val="17"/>
+			<Int sr="arg3" val="100"/>
+			<Str sr="arg4" ve="3">#FFFFFFFF</Str>
+			<Str sr="arg5" ve="3"/>
+			<Int sr="arg6" val="5"/>
+			<Int sr="arg7" val="2"/>
+			<Int sr="arg8" val="0"/>
+			<RectElement sr="background">
+				<flags>4</flags>
+				<geom>-1,-1,-1,-1,-1,-1,-1,-1</geom>
+				<Str sr="arg0" ve="3"/>
+				<Int sr="arg1" val="0"/>
+				<Str sr="arg2" ve="3"/>
+				<Str sr="arg3" ve="3"/>
+				<Int sr="arg4" val="0"/>
+				<Str sr="arg5" ve="3">#FF000000</Str>
+				<Int sr="arg6" val="0"/>
+				<Int sr="arg7" val="0"/>
+			</RectElement>
+		</TextElement>
+		<ButtonElement sr="elements1" ve="3">
+			<clickTask>215</clickTask>
+			<flags>4</flags>
+			<geom>787,552,180,110,-1,-1,-1,-1</geom>
+			<Str sr="arg0" ve="3">setup_next</Str>
+			<Str sr="arg1" ve="3">Next</Str>
+			<Int sr="arg2" val="17"/>
+			<Int sr="arg3" val="100"/>
+			<Str sr="arg4" ve="3">#FFFFFFFF</Str>
+			<Str sr="arg5" ve="3"/>
+			<Int sr="arg6" val="0"/>
+			<Img sr="arg7" ve="2"/>
+		</ButtonElement>
+		<TextElement sr="elements2" ve="3">
+			<flags>4</flags>
+			<geom>410,567,145,88,-1,-1,-1,-1</geom>
+			<Str sr="arg0" ve="3">setup_progress_2</Str>
+			<Str sr="arg1" ve="3">2/5</Str>
+			<Int sr="arg2" val="16"/>
+			<Int sr="arg3" val="100"/>
+			<Str sr="arg4" ve="3">#A0FFFFFF</Str>
+			<Str sr="arg5" ve="3"/>
+			<Int sr="arg6" val="0"/>
+			<Int sr="arg7" val="0"/>
+			<Int sr="arg8" val="0"/>
+			<RectElement sr="background">
+				<flags>4</flags>
+				<geom>-1,-1,-1,-1,-1,-1,-1,-1</geom>
+				<Str sr="arg0" ve="3"/>
+				<Int sr="arg1" val="0"/>
+				<Str sr="arg2" ve="3"/>
+				<Str sr="arg3" ve="3"/>
+				<Int sr="arg4" val="0"/>
+				<Str sr="arg5" ve="3">#FF000000</Str>
+				<Int sr="arg6" val="0"/>
+				<Int sr="arg7" val="0"/>
+			</RectElement>
+		</TextElement>
+		<ButtonElement sr="elements3" ve="3">
+			<clickTask>216</clickTask>
+			<flags>4</flags>
+			<geom>14,552,180,110,-1,-1,-1,-1</geom>
+			<Str sr="arg0" ve="3">setup_prev</Str>
+			<Str sr="arg1" ve="3">Prev</Str>
+			<Int sr="arg2" val="17"/>
+			<Int sr="arg3" val="100"/>
+			<Str sr="arg4" ve="3">#FFFFFFFF</Str>
+			<Str sr="arg5" ve="3"/>
+			<Int sr="arg6" val="0"/>
+			<Img sr="arg7" ve="2"/>
+		</ButtonElement>
+		<PropertiesElement sr="props">
+			<Int sr="arg0" val="1"/>
+			<Int sr="arg1" val="0"/>
+			<Str sr="arg2" ve="3">#FF303030</Str>
+			<Int sr="arg3" val="0"/>
+			<Str sr="arg4" ve="3">Setup</Str>
+			<Str sr="arg5" ve="3"/>
+			<Img sr="arg6" ve="2"/>
+			<Str sr="arg7" ve="3"/>
+		</PropertiesElement>
+	</Scene>
+	<Scene sr="sceneSetup 3">
+		<cdate>1761007399901</cdate>
+		<edate>1762938785133</edate>
+		<gridSize>15</gridSize>
+		<heightLand>-1</heightLand>
+		<heightPort>670</heightPort>
+		<nme>Setup 3</nme>
+		<widthLand>-1</widthLand>
+		<widthPort>980</widthPort>
+		<TextElement sr="elements0" ve="3">
+			<flags>4</flags>
+			<geom>47,29,891,408,-1,-1,-1,-1</geom>
+			<Str sr="arg0" ve="3">setup_text</Str>
+			<Str sr="arg1" ve="3">Permissions
+
+To ensure that the app works properly, please grant permissions in the settings and add it to the AdGuard filtering exclusions.</Str>
+			<Int sr="arg2" val="17"/>
+			<Int sr="arg3" val="100"/>
+			<Str sr="arg4" ve="3">#FFFFFFFF</Str>
+			<Str sr="arg5" ve="3"/>
+			<Int sr="arg6" val="5"/>
+			<Int sr="arg7" val="2"/>
+			<Int sr="arg8" val="0"/>
+			<RectElement sr="background">
+				<flags>4</flags>
+				<geom>-1,-1,-1,-1,-1,-1,-1,-1</geom>
+				<Str sr="arg0" ve="3"/>
+				<Int sr="arg1" val="0"/>
+				<Str sr="arg2" ve="3"/>
+				<Str sr="arg3" ve="3"/>
+				<Int sr="arg4" val="0"/>
+				<Str sr="arg5" ve="3">#FF000000</Str>
+				<Int sr="arg6" val="0"/>
+				<Int sr="arg7" val="0"/>
+			</RectElement>
+		</TextElement>
+		<ButtonElement sr="elements1" ve="3">
+			<clickTask>218</clickTask>
+			<flags>4</flags>
+			<geom>787,552,180,110,-1,-1,-1,-1</geom>
+			<Str sr="arg0" ve="3">setup_next</Str>
+			<Str sr="arg1" ve="3">Next</Str>
+			<Int sr="arg2" val="17"/>
+			<Int sr="arg3" val="100"/>
+			<Str sr="arg4" ve="3">#FFFFFFFF</Str>
+			<Str sr="arg5" ve="3"/>
+			<Int sr="arg6" val="0"/>
+			<Img sr="arg7" ve="2"/>
+		</ButtonElement>
+		<TextElement sr="elements2" ve="3">
+			<flags>4</flags>
+			<geom>410,567,145,88,-1,-1,-1,-1</geom>
+			<Str sr="arg0" ve="3">setup_progress_2</Str>
+			<Str sr="arg1" ve="3">3/5</Str>
+			<Int sr="arg2" val="16"/>
+			<Int sr="arg3" val="100"/>
+			<Str sr="arg4" ve="3">#A0FFFFFF</Str>
+			<Str sr="arg5" ve="3"/>
+			<Int sr="arg6" val="0"/>
+			<Int sr="arg7" val="0"/>
+			<Int sr="arg8" val="0"/>
+			<RectElement sr="background">
+				<flags>4</flags>
+				<geom>-1,-1,-1,-1,-1,-1,-1,-1</geom>
+				<Str sr="arg0" ve="3"/>
+				<Int sr="arg1" val="0"/>
+				<Str sr="arg2" ve="3"/>
+				<Str sr="arg3" ve="3"/>
+				<Int sr="arg4" val="0"/>
+				<Str sr="arg5" ve="3">#FF000000</Str>
+				<Int sr="arg6" val="0"/>
+				<Int sr="arg7" val="0"/>
+			</RectElement>
+		</TextElement>
+		<ButtonElement sr="elements3" ve="3">
+			<clickTask>219</clickTask>
+			<flags>4</flags>
+			<geom>14,552,180,110,-1,-1,-1,-1</geom>
+			<Str sr="arg0" ve="3">setup_prev</Str>
+			<Str sr="arg1" ve="3">Prev</Str>
+			<Int sr="arg2" val="17"/>
+			<Int sr="arg3" val="100"/>
+			<Str sr="arg4" ve="3">#FFFFFFFF</Str>
+			<Str sr="arg5" ve="3"/>
+			<Int sr="arg6" val="0"/>
+			<Img sr="arg7" ve="2"/>
+		</ButtonElement>
+		<ButtonElement sr="elements4" ve="3">
+			<clickTask>220</clickTask>
+			<flags>4</flags>
+			<geom>192,436,290,117,-1,-1,-1,-1</geom>
+			<Str sr="arg0" ve="3">to_app_settings</Str>
+			<Str sr="arg1" ve="3">To settings</Str>
+			<Int sr="arg2" val="16"/>
+			<Int sr="arg3" val="100"/>
+			<Str sr="arg4" ve="3">#FFFFFFFF</Str>
+			<Str sr="arg5" ve="3"/>
+			<Int sr="arg6" val="0"/>
+			<Img sr="arg7" ve="2"/>
+		</ButtonElement>
+		<ButtonElement sr="elements5" ve="3">
+			<clickTask>226</clickTask>
+			<flags>4</flags>
+			<geom>482,436,304,117,-1,-1,-1,-1</geom>
+			<Str sr="arg0" ve="3">to_adguard</Str>
+			<Str sr="arg1" ve="3">To AdGuard</Str>
+			<Int sr="arg2" val="16"/>
+			<Int sr="arg3" val="100"/>
+			<Str sr="arg4" ve="3">#FFFFFFFF</Str>
+			<Str sr="arg5" ve="3"/>
+			<Int sr="arg6" val="0"/>
+			<Img sr="arg7" ve="2"/>
+		</ButtonElement>
+		<PropertiesElement sr="props">
+			<Int sr="arg0" val="1"/>
+			<Int sr="arg1" val="0"/>
+			<Str sr="arg2" ve="3">#FF303030</Str>
+			<Int sr="arg3" val="0"/>
+			<Str sr="arg4" ve="3">Setup</Str>
+			<Str sr="arg5" ve="3"/>
+			<Img sr="arg6" ve="2"/>
+			<Str sr="arg7" ve="3"/>
+		</PropertiesElement>
+	</Scene>
+	<Scene sr="sceneSetup 4">
+		<cdate>1761007399901</cdate>
+		<edate>1762938425749</edate>
+		<gridSize>15</gridSize>
+		<heightLand>-1</heightLand>
+		<heightPort>670</heightPort>
+		<nme>Setup 4</nme>
+		<widthLand>-1</widthLand>
+		<widthPort>980</widthPort>
+		<TextElement sr="elements0" ve="3">
+			<flags>4</flags>
+			<geom>47,29,891,523,-1,-1,-1,-1</geom>
+			<Str sr="arg0" ve="3">setup_text</Str>
+			<Str sr="arg1" ve="3">Password
+
+Allows this app to control the proxy settings of AdGuard. Go to "Settings" → "General" → "Advanced" → "Automation". Enable it, copy the password and paste here.</Str>
+			<Int sr="arg2" val="17"/>
+			<Int sr="arg3" val="100"/>
+			<Str sr="arg4" ve="3">#FFFFFFFF</Str>
+			<Str sr="arg5" ve="3"/>
+			<Int sr="arg6" val="5"/>
+			<Int sr="arg7" val="2"/>
+			<Int sr="arg8" val="0"/>
+			<RectElement sr="background">
+				<flags>4</flags>
+				<geom>-1,-1,-1,-1,-1,-1,-1,-1</geom>
+				<Str sr="arg0" ve="3"/>
+				<Int sr="arg1" val="0"/>
+				<Str sr="arg2" ve="3"/>
+				<Str sr="arg3" ve="3"/>
+				<Int sr="arg4" val="0"/>
+				<Str sr="arg5" ve="3">#FF000000</Str>
+				<Int sr="arg6" val="0"/>
+				<Int sr="arg7" val="0"/>
+			</RectElement>
+		</TextElement>
+		<ButtonElement sr="elements1" ve="3">
+			<clickTask>222</clickTask>
+			<flags>4</flags>
+			<geom>787,552,180,110,-1,-1,-1,-1</geom>
+			<Str sr="arg0" ve="3">setup_next</Str>
+			<Str sr="arg1" ve="3">Next</Str>
+			<Int sr="arg2" val="17"/>
+			<Int sr="arg3" val="100"/>
+			<Str sr="arg4" ve="3">#FFFFFFFF</Str>
+			<Str sr="arg5" ve="3"/>
+			<Int sr="arg6" val="0"/>
+			<Img sr="arg7" ve="2"/>
+		</ButtonElement>
+		<TextElement sr="elements2" ve="3">
+			<flags>4</flags>
+			<geom>410,567,145,88,-1,-1,-1,-1</geom>
+			<Str sr="arg0" ve="3">setup_progress_2</Str>
+			<Str sr="arg1" ve="3">4/5</Str>
+			<Int sr="arg2" val="16"/>
+			<Int sr="arg3" val="100"/>
+			<Str sr="arg4" ve="3">#A0FFFFFF</Str>
+			<Str sr="arg5" ve="3"/>
+			<Int sr="arg6" val="0"/>
+			<Int sr="arg7" val="0"/>
+			<Int sr="arg8" val="0"/>
+			<RectElement sr="background">
+				<flags>4</flags>
+				<geom>-1,-1,-1,-1,-1,-1,-1,-1</geom>
+				<Str sr="arg0" ve="3"/>
+				<Int sr="arg1" val="0"/>
+				<Str sr="arg2" ve="3"/>
+				<Str sr="arg3" ve="3"/>
+				<Int sr="arg4" val="0"/>
+				<Str sr="arg5" ve="3">#FF000000</Str>
+				<Int sr="arg6" val="0"/>
+				<Int sr="arg7" val="0"/>
+			</RectElement>
+		</TextElement>
+		<ButtonElement sr="elements3" ve="3">
+			<clickTask>223</clickTask>
+			<flags>4</flags>
+			<geom>14,552,180,110,-1,-1,-1,-1</geom>
+			<Str sr="arg0" ve="3">setup_prev</Str>
+			<Str sr="arg1" ve="3">Prev</Str>
+			<Int sr="arg2" val="17"/>
+			<Int sr="arg3" val="100"/>
+			<Str sr="arg4" ve="3">#FFFFFFFF</Str>
+			<Str sr="arg5" ve="3"/>
+			<Int sr="arg6" val="0"/>
+			<Img sr="arg7" ve="2"/>
+		</ButtonElement>
+		<TextElement sr="elements4" ve="3">
+			<flags>4</flags>
+			<geom>555,397,217,62,-1,-1,-1,-1</geom>
+			<Str sr="arg0" ve="3">pass_text</Str>
+			<Str sr="arg1" ve="3">Password</Str>
+			<Int sr="arg2" val="13"/>
+			<Int sr="arg3" val="100"/>
+			<Str sr="arg4" ve="3">#FFFFFFFF</Str>
+			<Str sr="arg5" ve="3"/>
+			<Int sr="arg6" val="0"/>
+			<Int sr="arg7" val="1"/>
+			<Int sr="arg8" val="0"/>
+			<RectElement sr="background">
+				<flags>4</flags>
+				<geom>-1,-1,-1,-1,-1,-1,-1,-1</geom>
+				<Str sr="arg0" ve="3"/>
+				<Int sr="arg1" val="0"/>
+				<Str sr="arg2" ve="3"/>
+				<Str sr="arg3" ve="3"/>
+				<Int sr="arg4" val="0"/>
+				<Str sr="arg5" ve="3">#FF000000</Str>
+				<Int sr="arg6" val="0"/>
+				<Int sr="arg7" val="0"/>
+			</RectElement>
+		</TextElement>
+		<EditTextElement sr="elements5" ve="3">
+			<flags>4</flags>
+			<geom>395,421,537,117,-1,-1,-1,-1</geom>
+			<valueselectedTask>225</valueselectedTask>
+			<Str sr="arg0" ve="3">password</Str>
+			<Str sr="arg1" ve="3"/>
+			<Int sr="arg2" val="16"/>
+			<Int sr="arg3" val="100"/>
+			<Str sr="arg4" ve="3">#FFFFFFFF</Str>
+			<Str sr="arg5" ve="3"/>
+			<Int sr="arg6" val="0"/>
+			<Int sr="arg7" val="5"/>
+			<Int sr="arg8" val="30"/>
+		</EditTextElement>
+		<ButtonElement sr="elements6" ve="3">
+			<clickTask>224</clickTask>
+			<flags>4</flags>
+			<geom>47,421,319,117,-1,-1,-1,-1</geom>
+			<Str sr="arg0" ve="3">to_adguard</Str>
+			<Str sr="arg1" ve="3">To AdGuard</Str>
+			<Int sr="arg2" val="16"/>
+			<Int sr="arg3" val="100"/>
+			<Str sr="arg4" ve="3">#FFFFFFFF</Str>
+			<Str sr="arg5" ve="3"/>
+			<Int sr="arg6" val="0"/>
+			<Img sr="arg7" ve="2"/>
+		</ButtonElement>
+		<PropertiesElement sr="props">
+			<Int sr="arg0" val="1"/>
+			<Int sr="arg1" val="0"/>
+			<Str sr="arg2" ve="3">#FF303030</Str>
+			<Int sr="arg3" val="0"/>
+			<Str sr="arg4" ve="3">Setup</Str>
+			<Str sr="arg5" ve="3"/>
+			<Img sr="arg6" ve="2"/>
+			<Str sr="arg7" ve="3"/>
+		</PropertiesElement>
+	</Scene>
+	<Scene sr="sceneSetup 5">
+		<cdate>1761007399901</cdate>
+		<edate>1762944562396</edate>
+		<gridSize>15</gridSize>
+		<heightLand>-1</heightLand>
+		<heightPort>670</heightPort>
+		<nme>Setup 5</nme>
+		<widthLand>-1</widthLand>
+		<widthPort>980</widthPort>
+		<TextElement sr="elements0" ve="3">
+			<flags>4</flags>
+			<geom>47,29,891,523,-1,-1,-1,-1</geom>
+			<Str sr="arg0" ve="3">setup_text</Str>
+			<Str sr="arg1" ve="3">Proxy
+
+Open your VPN app, enable inbound SOCKS(4/5) or HTTP(S) proxy and enter its type and port here.</Str>
+			<Int sr="arg2" val="17"/>
+			<Int sr="arg3" val="100"/>
+			<Str sr="arg4" ve="3">#FFFFFFFF</Str>
+			<Str sr="arg5" ve="3"/>
+			<Int sr="arg6" val="5"/>
+			<Int sr="arg7" val="2"/>
+			<Int sr="arg8" val="0"/>
+			<RectElement sr="background">
+				<flags>4</flags>
+				<geom>-1,-1,-1,-1,-1,-1,-1,-1</geom>
+				<Str sr="arg0" ve="3"/>
+				<Int sr="arg1" val="0"/>
+				<Str sr="arg2" ve="3"/>
+				<Str sr="arg3" ve="3"/>
+				<Int sr="arg4" val="0"/>
+				<Str sr="arg5" ve="3">#FF000000</Str>
+				<Int sr="arg6" val="0"/>
+				<Int sr="arg7" val="0"/>
+			</RectElement>
+		</TextElement>
+		<ButtonElement sr="elements1" ve="3">
+			<clickTask>227</clickTask>
+			<flags>4</flags>
+			<geom>787,552,180,110,-1,-1,-1,-1</geom>
+			<Str sr="arg0" ve="3">setup_next</Str>
+			<Str sr="arg1" ve="3">Done</Str>
+			<Int sr="arg2" val="17"/>
+			<Int sr="arg3" val="100"/>
+			<Str sr="arg4" ve="3">#FFFFFFFF</Str>
+			<Str sr="arg5" ve="3"/>
+			<Int sr="arg6" val="0"/>
+			<Img sr="arg7" ve="2"/>
+		</ButtonElement>
+		<TextElement sr="elements2" ve="3">
+			<flags>4</flags>
+			<geom>410,567,145,88,-1,-1,-1,-1</geom>
+			<Str sr="arg0" ve="3">setup_progress_4</Str>
+			<Str sr="arg1" ve="3">5/5</Str>
+			<Int sr="arg2" val="16"/>
+			<Int sr="arg3" val="100"/>
+			<Str sr="arg4" ve="3">#A0FFFFFF</Str>
+			<Str sr="arg5" ve="3"/>
+			<Int sr="arg6" val="0"/>
+			<Int sr="arg7" val="0"/>
+			<Int sr="arg8" val="0"/>
+			<RectElement sr="background">
+				<flags>4</flags>
+				<geom>-1,-1,-1,-1,-1,-1,-1,-1</geom>
+				<Str sr="arg0" ve="3"/>
+				<Int sr="arg1" val="0"/>
+				<Str sr="arg2" ve="3"/>
+				<Str sr="arg3" ve="3"/>
+				<Int sr="arg4" val="0"/>
+				<Str sr="arg5" ve="3">#FF000000</Str>
+				<Int sr="arg6" val="0"/>
+				<Int sr="arg7" val="0"/>
+			</RectElement>
+		</TextElement>
+		<ButtonElement sr="elements3" ve="3">
+			<clickTask>229</clickTask>
+			<flags>4</flags>
+			<geom>14,552,180,110,-1,-1,-1,-1</geom>
+			<Str sr="arg0" ve="3">setup_prev</Str>
+			<Str sr="arg1" ve="3">Prev</Str>
+			<Int sr="arg2" val="17"/>
+			<Int sr="arg3" val="100"/>
+			<Str sr="arg4" ve="3">#FFFFFFFF</Str>
+			<Str sr="arg5" ve="3"/>
+			<Int sr="arg6" val="0"/>
+			<Img sr="arg7" ve="2"/>
+		</ButtonElement>
+		<TextElement sr="elements4" ve="3">
+			<flags>4</flags>
+			<geom>555,370,101,62,-1,-1,-1,-1</geom>
+			<Str sr="arg0" ve="3">type_text</Str>
+			<Str sr="arg1" ve="3">Type</Str>
+			<Int sr="arg2" val="13"/>
+			<Int sr="arg3" val="100"/>
+			<Str sr="arg4" ve="3">#FFFFFFFF</Str>
+			<Str sr="arg5" ve="3"/>
+			<Int sr="arg6" val="0"/>
+			<Int sr="arg7" val="1"/>
+			<Int sr="arg8" val="0"/>
+			<RectElement sr="background">
+				<flags>4</flags>
+				<geom>-1,-1,-1,-1,-1,-1,-1,-1</geom>
+				<Str sr="arg0" ve="3"/>
+				<Int sr="arg1" val="0"/>
+				<Str sr="arg2" ve="3"/>
+				<Str sr="arg3" ve="3"/>
+				<Int sr="arg4" val="0"/>
+				<Str sr="arg5" ve="3">#FF000000</Str>
+				<Int sr="arg6" val="0"/>
+				<Int sr="arg7" val="0"/>
+			</RectElement>
+		</TextElement>
+		<TextElement sr="elements5" ve="3">
+			<flags>4</flags>
+			<geom>294,370,101,62,-1,-1,-1,-1</geom>
+			<Str sr="arg0" ve="3">port_text</Str>
+			<Str sr="arg1" ve="3">Port</Str>
+			<Int sr="arg2" val="13"/>
+			<Int sr="arg3" val="100"/>
+			<Str sr="arg4" ve="3">#FFFFFFFF</Str>
+			<Str sr="arg5" ve="3"/>
+			<Int sr="arg6" val="0"/>
+			<Int sr="arg7" val="1"/>
+			<Int sr="arg8" val="0"/>
+			<RectElement sr="background">
+				<flags>4</flags>
+				<geom>-1,-1,-1,-1,-1,-1,-1,-1</geom>
+				<Str sr="arg0" ve="3"/>
+				<Int sr="arg1" val="0"/>
+				<Str sr="arg2" ve="3"/>
+				<Str sr="arg3" ve="3"/>
+				<Int sr="arg4" val="0"/>
+				<Str sr="arg5" ve="3">#FF000000</Str>
+				<Int sr="arg6" val="0"/>
+				<Int sr="arg7" val="0"/>
+			</RectElement>
+		</TextElement>
+		<SpinnerElement sr="elements6">
+			<flags>4</flags>
+			<geom>482,400,300,103,-1,-1,-1,-1</geom>
+			<itemselectedTask>221</itemselectedTask>
+			<Str sr="arg0" ve="3">type</Str>
+			<Int sr="arg1" val="1"/>
+			<Str sr="arg2" ve="3">%TYPE</Str>
+			<Scene sr="arg3">
+				<Scene sr="val">
+					<cdate>1761515432210</cdate>
+					<edate>1761515432210</edate>
+					<gridSize>10</gridSize>
+					<heightLand>-1</heightLand>
+					<heightPort>103</heightPort>
+					<nme>spinner</nme>
+					<widthLand>-1</widthLand>
+					<widthPort>300</widthPort>
+					<ImageElement sr="elements0" ve="2">
+						<flags>1</flags>
+						<geom>27,0,153,84,-1,-1,-1,-1</geom>
+						<Str sr="arg0" ve="3">Icon</Str>
+						<Img sr="arg1" ve="2">
+							<nme>cust_bolt_white</nme>
+						</Img>
+						<Int sr="arg2" val="255"/>
+					</ImageElement>
+					<TextElement sr="elements1" ve="3">
+						<flags>5</flags>
+						<geom>0,0,299,103,-1,-1,-1,-1</geom>
+						<Str sr="arg0" ve="3">Label</Str>
+						<Str sr="arg1" ve="3">Tэxt</Str>
+						<Int sr="arg2" val="16"/>
+						<Int sr="arg3" val="100"/>
+						<Str sr="arg4" ve="3">#FFFFFFFF</Str>
+						<Str sr="arg5" ve="3"/>
+						<Int sr="arg6" val="3"/>
+						<Int sr="arg7" val="1"/>
+						<Int sr="arg8" val="0"/>
+						<RectElement sr="background">
+							<flags>4</flags>
+							<geom>-1,-1,-1,-1,-1,-1,-1,-1</geom>
+							<Str sr="arg0" ve="3"/>
+							<Int sr="arg1" val="0"/>
+							<Str sr="arg2" ve="3"/>
+							<Str sr="arg3" ve="3"/>
+							<Int sr="arg4" val="0"/>
+							<Str sr="arg5" ve="3">#FF000000</Str>
+							<Int sr="arg6" val="0"/>
+							<Int sr="arg7" val="0"/>
+						</RectElement>
+					</TextElement>
+					<TextElement sr="elements2" ve="3">
+						<flags>1</flags>
+						<geom>127,0,53,83,-1,-1,-1,-1</geom>
+						<Str sr="arg0" ve="3">Index</Str>
+						<Str sr="arg1" ve="3">1.</Str>
+						<Int sr="arg2" val="22"/>
+						<Int sr="arg3" val="100"/>
+						<Str sr="arg4" ve="3">#FFFFFFFF</Str>
+						<Str sr="arg5" ve="3"/>
+						<Int sr="arg6" val="3"/>
+						<Int sr="arg7" val="0"/>
+						<Int sr="arg8" val="0"/>
+					</TextElement>
+					<PropertiesElement sr="props">
+						<Int sr="arg0" val="1"/>
+						<Int sr="arg1" val="0"/>
+						<Str sr="arg2" ve="3">#00000000</Str>
+						<Int sr="arg3" val="0"/>
+						<Str sr="arg4" ve="3">spinner</Str>
+						<Str sr="arg5" ve="3"/>
+						<Img sr="arg6" ve="2"/>
+						<Str sr="arg7" ve="3"/>
+					</PropertiesElement>
+				</Scene>
+			</Scene>
+			<Str sr="arg4" ve="3">#FF404040</Str>
+		</SpinnerElement>
+		<EditTextElement sr="elements7" ve="3">
+			<flags>4</flags>
+			<geom>250,392,188,117,-1,-1,-1,-1</geom>
+			<valueselectedTask>194</valueselectedTask>
+			<Str sr="arg0" ve="3">port</Str>
+			<Str sr="arg1" ve="3"/>
+			<Int sr="arg2" val="16"/>
+			<Int sr="arg3" val="100"/>
+			<Str sr="arg4" ve="3">#FFFFFFFF</Str>
+			<Str sr="arg5" ve="3"/>
+			<Int sr="arg6" val="0"/>
+			<Int sr="arg7" val="4"/>
+			<Int sr="arg8" val="5"/>
+		</EditTextElement>
+		<PropertiesElement sr="props">
+			<Int sr="arg0" val="1"/>
+			<Int sr="arg1" val="0"/>
+			<Str sr="arg2" ve="3">#FF303030</Str>
+			<Int sr="arg3" val="0"/>
+			<Str sr="arg4" ve="3">Setup</Str>
+			<Str sr="arg5" ve="3"/>
+			<Img sr="arg6" ve="2"/>
+			<Str sr="arg7" ve="3"/>
+		</PropertiesElement>
+	</Scene>
+	<Task sr="task191">
+		<cdate>1760844093227</cdate>
+		<edate>1763064088272</edate>
+		<id>191</id>
+		<nme>AdGuard: enable proxy</nme>
+		<pri>100</pri>
+		<Action sr="act0" ve="7">
+			<code>37</code>
+			<ConditionList sr="if">
+				<Condition sr="c0" ve="3">
+					<lhs>%STATE</lhs>
+					<op>2</op>
+					<rhs>1</rhs>
+				</Condition>
+			</ConditionList>
+		</Action>
+		<Action sr="act1" ve="7">
+			<code>877</code>
+			<label>"Proxy connected"</label>
+			<Str sr="arg0" ve="3">proxy_state</Str>
+			<Int sr="arg1" val="0"/>
+			<Str sr="arg2" ve="3"/>
+			<Str sr="arg3" ve="3"/>
+			<Str sr="arg4" ve="3">enable:true</Str>
+			<Str sr="arg5" ve="3">password:%PASS</Str>
+			<Str sr="arg6" ve="3">quiet:%QUIET</Str>
+			<Str sr="arg7" ve="3">com.adguard.android</Str>
+			<Str sr="arg8" ve="3">com.adguard.android.receiver.AutomationReceiver</Str>
+			<Int sr="arg9" val="0"/>
+		</Action>
+		<Action sr="act2" ve="7">
+			<code>877</code>
+			<label>Quiet: "Proxy set as default"</label>
+			<Str sr="arg0" ve="3">proxy_default</Str>
+			<Int sr="arg1" val="0"/>
+			<Str sr="arg2" ve="3"/>
+			<Str sr="arg3" ve="3"/>
+			<Str sr="arg4" ve="3">server:host=127.0.0.1&amp;port=%PORT&amp;type=%TYPE&amp;udp=true</Str>
+			<Str sr="arg5" ve="3">password:%PASS</Str>
+			<Str sr="arg6" ve="3">quiet:true</Str>
+			<Str sr="arg7" ve="3">com.adguard.android</Str>
+			<Str sr="arg8" ve="3">com.adguard.android.receiver.AutomationReceiver</Str>
+			<Int sr="arg9" val="0"/>
+		</Action>
+		<Action sr="act3" ve="7">
+			<code>38</code>
+		</Action>
+	</Task>
+	<Task sr="task192">
+		<cdate>1760944876760</cdate>
+		<edate>1760944876760</edate>
+		<id>192</id>
+		<pri>104</pri>
+		<Action sr="act0" ve="7">
+			<code>48</code>
+			<Str sr="arg0" ve="3">Settings</Str>
+			<Int sr="arg1" val="0"/>
+		</Action>
+		<Action sr="act1" ve="7">
+			<code>46</code>
+			<se>false</se>
+			<Str sr="arg0" ve="3">Home</Str>
+		</Action>
+		<Action sr="act2" ve="7">
+			<code>50</code>
+			<Str sr="arg0" ve="3">Home</Str>
+			<Str sr="arg1" ve="3">main_switch</Str>
+			<Int sr="arg2">
+				<var>%STATE</var>
+			</Int>
+		</Action>
+		<Action sr="act3" ve="7">
+			<code>47</code>
+			<Str sr="arg0" ve="3">Home</Str>
+			<Int sr="arg1" val="5"/>
+			<Int sr="arg10" val="1"/>
+			<Int sr="arg2" val="100"/>
+			<Int sr="arg3" val="100"/>
+			<Int sr="arg4" val="0"/>
+			<Int sr="arg5" val="0"/>
+			<Int sr="arg6" val="0"/>
+			<Int sr="arg7" val="1"/>
+			<Int sr="arg8" val="1"/>
+			<Int sr="arg9" val="1"/>
+		</Action>
+		<Action sr="act4" ve="7">
+			<code>49</code>
+			<se>false</se>
+			<Str sr="arg0" ve="3">Settings</Str>
+		</Action>
+	</Task>
+	<Task sr="task193">
+		<cdate>1761009229751</cdate>
+		<edate>1761446468061</edate>
+		<id>193</id>
+		<pri>110</pri>
+		<Action sr="act0" ve="7">
+			<code>48</code>
+			<Str sr="arg0" ve="3">About</Str>
+			<Int sr="arg1" val="2"/>
+		</Action>
+		<Action sr="act1" ve="7">
+			<code>47</code>
+			<Str sr="arg0" ve="3">Home</Str>
+			<Int sr="arg1" val="5"/>
+			<Int sr="arg10" val="1"/>
+			<Int sr="arg2" val="100"/>
+			<Int sr="arg3" val="100"/>
+			<Int sr="arg4" val="2"/>
+			<Int sr="arg5" val="0"/>
+			<Int sr="arg6" val="0"/>
+			<Int sr="arg7" val="1"/>
+			<Int sr="arg8" val="1"/>
+			<Int sr="arg9" val="1"/>
+		</Action>
+	</Task>
+	<Task sr="task194">
+		<cdate>1761624011016</cdate>
+		<edate>1761624011016</edate>
+		<id>194</id>
+		<pri>102</pri>
+		<Action sr="act0" ve="7">
+			<code>547</code>
+			<Str sr="arg0" ve="3">%PORT</Str>
+			<Str sr="arg1" ve="3">%new_val</Str>
+			<Int sr="arg2" val="0"/>
+			<Int sr="arg3" val="0"/>
+			<Int sr="arg4" val="0"/>
+			<Int sr="arg5" val="3"/>
+			<Int sr="arg6" val="1"/>
+		</Action>
+	</Task>
+	<Task sr="task195">
+		<cdate>1760994909381</cdate>
+		<edate>1760994909381</edate>
+		<id>195</id>
+		<pri>104</pri>
+		<Action sr="act0" ve="7">
+			<code>37</code>
+			<coll>false</coll>
+			<ConditionList sr="if">
+				<Condition sr="c0" ve="3">
+					<lhs>%new_val</lhs>
+					<op>0</op>
+					<rhs>on</rhs>
+				</Condition>
+			</ConditionList>
+		</Action>
+		<Action sr="act1" ve="7">
+			<code>547</code>
+			<Str sr="arg0" ve="3">%QUIETN</Str>
+			<Str sr="arg1" ve="3">1</Str>
+			<Int sr="arg2" val="0"/>
+			<Int sr="arg3" val="0"/>
+			<Int sr="arg4" val="0"/>
+			<Int sr="arg5" val="3"/>
+			<Int sr="arg6" val="1"/>
+		</Action>
+		<Action sr="act2" ve="7">
+			<code>547</code>
+			<Str sr="arg0" ve="3">%QUIET</Str>
+			<Str sr="arg1" ve="3">true</Str>
+			<Int sr="arg2" val="0"/>
+			<Int sr="arg3" val="0"/>
+			<Int sr="arg4" val="0"/>
+			<Int sr="arg5" val="3"/>
+			<Int sr="arg6" val="1"/>
+		</Action>
+		<Action sr="act3" ve="7">
+			<code>43</code>
+		</Action>
+		<Action sr="act4" ve="7">
+			<code>547</code>
+			<Str sr="arg0" ve="3">%QUIETN</Str>
+			<Str sr="arg1" ve="3">0</Str>
+			<Int sr="arg2" val="0"/>
+			<Int sr="arg3" val="0"/>
+			<Int sr="arg4" val="0"/>
+			<Int sr="arg5" val="3"/>
+			<Int sr="arg6" val="1"/>
+		</Action>
+		<Action sr="act5" ve="7">
+			<code>547</code>
+			<Str sr="arg0" ve="3">%QUIET</Str>
+			<Str sr="arg1" ve="3">false</Str>
+			<Int sr="arg2" val="0"/>
+			<Int sr="arg3" val="0"/>
+			<Int sr="arg4" val="0"/>
+			<Int sr="arg5" val="3"/>
+			<Int sr="arg6" val="1"/>
+		</Action>
+		<Action sr="act6" ve="7">
+			<code>38</code>
+		</Action>
+	</Task>
+	<Task sr="task196">
+		<cdate>1761515319878</cdate>
+		<edate>1761515319878</edate>
+		<id>196</id>
+		<pri>120</pri>
+		<Action sr="act0" ve="7">
+			<code>47</code>
+			<Str sr="arg0" ve="3">Hint Port</Str>
+			<Int sr="arg1" val="5"/>
+			<Int sr="arg10" val="1"/>
+			<Int sr="arg2" val="100"/>
+			<Int sr="arg3" val="100"/>
+			<Int sr="arg4" val="2"/>
+			<Int sr="arg5" val="0"/>
+			<Int sr="arg6" val="0"/>
+			<Int sr="arg7" val="1"/>
+			<Int sr="arg8" val="1"/>
+			<Int sr="arg9" val="1"/>
+		</Action>
+	</Task>
+	<Task sr="task197">
+		<cdate>1761003939576</cdate>
+		<edate>1761003939576</edate>
+		<id>197</id>
+		<pri>102</pri>
+		<Action sr="act0" ve="7">
+			<code>37</code>
+			<coll>false</coll>
+			<ConditionList sr="if">
+				<Condition sr="c0" ve="3">
+					<lhs>%new_val</lhs>
+					<op>2</op>
+					<rhs>on</rhs>
+				</Condition>
+			</ConditionList>
+		</Action>
+		<Action sr="act1" ve="7">
+			<code>547</code>
+			<Str sr="arg0" ve="3">%STATE</Str>
+			<Str sr="arg1" ve="3">1</Str>
+			<Int sr="arg2" val="0"/>
+			<Int sr="arg3" val="0"/>
+			<Int sr="arg4" val="0"/>
+			<Int sr="arg5" val="3"/>
+			<Int sr="arg6" val="1"/>
+		</Action>
+		<Action sr="act10" ve="7">
+			<code>38</code>
+		</Action>
+		<Action sr="act2" ve="7">
+			<code>130</code>
+			<Str sr="arg0" ve="3">AdGuard: check proxy</Str>
+			<Int sr="arg1">
+				<var>%priority</var>
+			</Int>
+			<Int sr="arg10" val="1"/>
+			<Str sr="arg2" ve="3"/>
+			<Str sr="arg3" ve="3"/>
+			<Str sr="arg4" ve="3"/>
+			<Int sr="arg5" val="0"/>
+			<Int sr="arg6" val="0"/>
+			<Str sr="arg7" ve="3"/>
+			<Int sr="arg8" val="0"/>
+			<Int sr="arg9" val="0"/>
+		</Action>
+		<Action sr="act3" ve="7">
+			<code>159</code>
+			<Str sr="arg0" ve="3">VPN as VPN</Str>
+			<Int sr="arg1" val="1"/>
+		</Action>
+		<Action sr="act4" ve="7">
+			<code>159</code>
+			<Str sr="arg0" ve="3">VPN as Proxy</Str>
+			<Int sr="arg1" val="1"/>
+		</Action>
+		<Action sr="act5" ve="7">
+			<code>43</code>
+		</Action>
+		<Action sr="act6" ve="7">
+			<code>547</code>
+			<Str sr="arg0" ve="3">%STATE</Str>
+			<Str sr="arg1" ve="3">0</Str>
+			<Int sr="arg2" val="0"/>
+			<Int sr="arg3" val="0"/>
+			<Int sr="arg4" val="0"/>
+			<Int sr="arg5" val="3"/>
+			<Int sr="arg6" val="1"/>
+		</Action>
+		<Action sr="act7" ve="7">
+			<code>159</code>
+			<Str sr="arg0" ve="3">VPN as VPN</Str>
+			<Int sr="arg1" val="0"/>
+		</Action>
+		<Action sr="act8" ve="7">
+			<code>159</code>
+			<Str sr="arg0" ve="3">VPN as Proxy</Str>
+			<Int sr="arg1" val="0"/>
+		</Action>
+		<Action sr="act9" ve="7">
+			<code>549</code>
+			<label>Delete saved proxy state</label>
+			<on>false</on>
+			<Str sr="arg0" ve="3">%CODE2</Str>
+			<Int sr="arg1" val="0"/>
+			<Int sr="arg2" val="0"/>
+			<Int sr="arg3" val="0"/>
+		</Action>
+	</Task>
+	<Task sr="task198">
+		<cdate>1762506409487</cdate>
+		<edate>1762506409487</edate>
+		<id>198</id>
+		<pri>124</pri>
+		<Action sr="act0" ve="7">
+			<code>105</code>
+			<Str sr="arg0" ve="3">%TYPE://127.0.0.1:%PORT</Str>
+			<Int sr="arg1" val="0"/>
+			<Str sr="arg2" ve="3"/>
+			<Int sr="arg3" val="0"/>
+		</Action>
+		<Action sr="act1" ve="7">
+			<code>548</code>
+			<Str sr="arg0" ve="3">Copied to clipboard</Str>
+			<Int sr="arg1" val="0"/>
+			<Str sr="arg10" ve="3"/>
+			<Int sr="arg11" val="1"/>
+			<Int sr="arg12" val="0"/>
+			<Str sr="arg13" ve="3"/>
+			<Int sr="arg14" val="0"/>
+			<Str sr="arg15" ve="3"/>
+			<Int sr="arg2" val="1"/>
+			<Str sr="arg3" ve="3"/>
+			<Str sr="arg4" ve="3"/>
+			<Str sr="arg5" ve="3"/>
+			<Str sr="arg6" ve="3"/>
+			<Str sr="arg7" ve="3"/>
+			<Str sr="arg8" ve="3"/>
+			<Int sr="arg9" val="1"/>
+		</Action>
+	</Task>
+	<Task sr="task199">
+		<cdate>1760845016041</cdate>
+		<edate>1763064102816</edate>
+		<id>199</id>
+		<nme>AdGuard: disable proxy</nme>
+		<pri>100</pri>
+		<Action sr="act0" ve="7">
+			<code>37</code>
+			<ConditionList sr="if">
+				<Condition sr="c0" ve="3">
+					<lhs>%STATE</lhs>
+					<op>2</op>
+					<rhs>1</rhs>
+				</Condition>
+			</ConditionList>
+		</Action>
+		<Action sr="act1" ve="7">
+			<code>877</code>
+			<label>"Proxy disconnected"</label>
+			<Str sr="arg0" ve="3">proxy_state</Str>
+			<Int sr="arg1" val="0"/>
+			<Str sr="arg2" ve="3"/>
+			<Str sr="arg3" ve="3"/>
+			<Str sr="arg4" ve="3">enable:false</Str>
+			<Str sr="arg5" ve="3">password:%PASS</Str>
+			<Str sr="arg6" ve="3">quiet:%QUIET</Str>
+			<Str sr="arg7" ve="3">com.adguard.android</Str>
+			<Str sr="arg8" ve="3">com.adguard.android.receiver.AutomationReceiver</Str>
+			<Int sr="arg9" val="0"/>
+		</Action>
+		<Action sr="act2" ve="7">
+			<code>877</code>
+			<label>Quiet: "Proxy removed"</label>
+			<Str sr="arg0" ve="3">proxy_remove</Str>
+			<Int sr="arg1" val="0"/>
+			<Str sr="arg2" ve="3"/>
+			<Str sr="arg3" ve="3"/>
+			<Str sr="arg4" ve="3">server:host=127.0.0.1&amp;port=%PORT&amp;type=%TYPE&amp;udp=true</Str>
+			<Str sr="arg5" ve="3">password:%PASS</Str>
+			<Str sr="arg6" ve="3">quiet:true</Str>
+			<Str sr="arg7" ve="3">com.adguard.android</Str>
+			<Str sr="arg8" ve="3">com.adguard.android.receiver.AutomationReceiver</Str>
+			<Int sr="arg9" val="0"/>
+		</Action>
+		<Action sr="act3" ve="7">
+			<code>38</code>
+		</Action>
+	</Task>
+	<Task sr="task200">
+		<cdate>1761008732594</cdate>
+		<edate>1761008732594</edate>
+		<id>200</id>
+		<pri>102</pri>
+		<Action sr="act0" ve="7">
+			<code>48</code>
+			<Str sr="arg0" ve="3">Setup 1</Str>
+			<Int sr="arg1" val="2"/>
+		</Action>
+		<Action sr="act1" ve="7">
+			<code>547</code>
+			<Str sr="arg0" ve="3">%FIRSTRUN</Str>
+			<Str sr="arg1" ve="3">2</Str>
+			<Int sr="arg2" val="0"/>
+			<Int sr="arg3" val="0"/>
+			<Int sr="arg4" val="0"/>
+			<Int sr="arg5" val="3"/>
+			<Int sr="arg6" val="1"/>
+		</Action>
+		<Action sr="act2" ve="7">
+			<code>47</code>
+			<Str sr="arg0" ve="3">Setup 2</Str>
+			<Int sr="arg1" val="5"/>
+			<Int sr="arg10" val="1"/>
+			<Int sr="arg2" val="100"/>
+			<Int sr="arg3" val="100"/>
+			<Int sr="arg4" val="2"/>
+			<Int sr="arg5" val="0"/>
+			<Int sr="arg6" val="0"/>
+			<Int sr="arg7" val="1"/>
+			<Int sr="arg8" val="1"/>
+			<Int sr="arg9" val="1"/>
+		</Action>
+	</Task>
+	<Task sr="task201">
+		<cdate>1760847276032</cdate>
+		<edate>1763769107499</edate>
+		<id>201</id>
+		<nme>AdGuard: check proxy</nme>
+		<pri>6</pri>
+		<Action sr="act0" ve="7">
+			<code>37</code>
+			<coll>false</coll>
+			<ConditionList sr="if">
+				<bool0>And</bool0>
+				<Condition sr="c0" ve="3">
+					<lhs>%STATE</lhs>
+					<op>2</op>
+					<rhs>1</rhs>
+				</Condition>
+				<Condition sr="c1" ve="3">
+					<lhs>%VPNONLY</lhs>
+					<op>2</op>
+					<rhs>0</rhs>
+				</Condition>
+			</ConditionList>
+		</Action>
+		<Action sr="act1" ve="7">
+			<code>123</code>
+			<label>Ping and store info to CODE1</label>
+			<se>false</se>
+			<Str sr="arg0" ve="3">timeout 2 bash -c "echo &gt; /dev/tcp/127.0.0.1/%PORT" &gt;/dev/null 2&gt;&amp;1 &amp;&amp; echo 1 || echo 0</Str>
+			<Int sr="arg1" val="1"/>
+			<Int sr="arg2" val="0"/>
+			<Str sr="arg3" ve="3">%CODE1</Str>
+			<Str sr="arg4" ve="3">%CODE1</Str>
+			<Str sr="arg5" ve="3"/>
+			<Int sr="arg6" val="1"/>
+			<Int sr="arg7" val="0"/>
+			<Int sr="arg8" val="0"/>
+		</Action>
+		<Action sr="act10" ve="7">
+			<code>38</code>
+		</Action>
+		<Action sr="act11" ve="7">
+			<code>38</code>
+		</Action>
+		<Action sr="act2" ve="7">
+			<code>37</code>
+			<coll>false</coll>
+			<label>If CODE1 = CODE2, do nothing</label>
+			<ConditionList sr="if">
+				<Condition sr="c0" ve="3">
+					<lhs>%CODE1</lhs>
+					<op>0</op>
+					<rhs>%CODE2</rhs>
+				</Condition>
+			</ConditionList>
+		</Action>
+		<Action sr="act3" ve="7">
+			<code>43</code>
+			<label>If CODE1 ≠ CODE2, then</label>
+		</Action>
+		<Action sr="act4" ve="7">
+			<code>30</code>
+			<Int sr="arg0" val="100"/>
+			<Int sr="arg1" val="0"/>
+			<Int sr="arg2" val="0"/>
+			<Int sr="arg3" val="0"/>
+			<Int sr="arg4" val="0"/>
+		</Action>
+		<Action sr="act5" ve="7">
+			<code>123</code>
+			<label>Ping again and store info to CODE2</label>
+			<se>false</se>
+			<Str sr="arg0" ve="3">timeout 2 bash -c "echo &gt; /dev/tcp/127.0.0.1/%PORT" &gt;/dev/null 2&gt;&amp;1 &amp;&amp; echo 1 || echo 0</Str>
+			<Int sr="arg1" val="1"/>
+			<Int sr="arg2" val="0"/>
+			<Str sr="arg3" ve="3">%CODE2</Str>
+			<Str sr="arg4" ve="3">%CODE2</Str>
+			<Str sr="arg5" ve="3"/>
+			<Int sr="arg6" val="1"/>
+			<Int sr="arg7" val="0"/>
+			<Int sr="arg8" val="0"/>
+		</Action>
+		<Action sr="act6" ve="7">
+			<code>37</code>
+			<coll>false</coll>
+			<label>If the server is working</label>
+			<ConditionList sr="if">
+				<Condition sr="c0" ve="3">
+					<lhs>%CODE2</lhs>
+					<op>1</op>
+					<rhs>0</rhs>
+				</Condition>
+			</ConditionList>
+		</Action>
+		<Action sr="act7" ve="7">
+			<code>130</code>
+			<Str sr="arg0" ve="3">AdGuard: enable proxy</Str>
+			<Int sr="arg1">
+				<var>%priority</var>
+			</Int>
+			<Int sr="arg10" val="1"/>
+			<Str sr="arg2" ve="3"/>
+			<Str sr="arg3" ve="3"/>
+			<Str sr="arg4" ve="3"/>
+			<Int sr="arg5" val="0"/>
+			<Int sr="arg6" val="0"/>
+			<Str sr="arg7" ve="3"/>
+			<Int sr="arg8" val="0"/>
+			<Int sr="arg9" val="0"/>
+		</Action>
+		<Action sr="act8" ve="7">
+			<code>43</code>
+		</Action>
+		<Action sr="act9" ve="7">
+			<code>130</code>
+			<Str sr="arg0" ve="3">AdGuard: disable proxy</Str>
+			<Int sr="arg1">
+				<var>%priority</var>
+			</Int>
+			<Int sr="arg10" val="1"/>
+			<Str sr="arg2" ve="3"/>
+			<Str sr="arg3" ve="3"/>
+			<Str sr="arg4" ve="3"/>
+			<Int sr="arg5" val="0"/>
+			<Int sr="arg6" val="0"/>
+			<Str sr="arg7" ve="3"/>
+			<Int sr="arg8" val="0"/>
+			<Int sr="arg9" val="0"/>
+		</Action>
+	</Task>
+	<Task sr="task202">
+		<cdate>1760930653222</cdate>
+		<edate>1761522934347</edate>
+		<id>202</id>
+		<pri>104</pri>
+		<Action sr="act0" ve="7">
+			<code>877</code>
+			<label>Remove proxy with old port</label>
+			<Str sr="arg0" ve="3">proxy_remove</Str>
+			<Int sr="arg1" val="0"/>
+			<Str sr="arg2" ve="3"/>
+			<Str sr="arg3" ve="3"/>
+			<Str sr="arg4" ve="3">password:%PASS</Str>
+			<Str sr="arg5" ve="3">server:host=127.0.0.1&amp;port=%PORT&amp;type=%TYPE&amp;udp=true</Str>
+			<Str sr="arg6" ve="3">quiet:true</Str>
+			<Str sr="arg7" ve="3">com.adguard.android</Str>
+			<Str sr="arg8" ve="3">com.adguard.android.receiver.AutomationReceiver</Str>
+			<Int sr="arg9" val="0"/>
+		</Action>
+		<Action sr="act1" ve="7">
+			<code>547</code>
+			<label>Set variable to new port</label>
+			<Str sr="arg0" ve="3">%PORT</Str>
+			<Str sr="arg1" ve="3">%new_val</Str>
+			<Int sr="arg2" val="0"/>
+			<Int sr="arg3" val="0"/>
+			<Int sr="arg4" val="0"/>
+			<Int sr="arg5" val="3"/>
+			<Int sr="arg6" val="1"/>
+		</Action>
+		<Action sr="act2" ve="7">
+			<code>877</code>
+			<label>Create proxy with new port (quiet)</label>
+			<Str sr="arg0" ve="3">proxy_default</Str>
+			<Int sr="arg1" val="0"/>
+			<Str sr="arg2" ve="3"/>
+			<Str sr="arg3" ve="3"/>
+			<Str sr="arg4" ve="3">password:%PASS</Str>
+			<Str sr="arg5" ve="3">server:host=127.0.0.1&amp;port=%PORT&amp;type=%TYPE&amp;udp=true</Str>
+			<Str sr="arg6" ve="3">quiet:true</Str>
+			<Str sr="arg7" ve="3">com.adguard.android</Str>
+			<Str sr="arg8" ve="3">com.adguard.android.receiver.AutomationReceiver</Str>
+			<Int sr="arg9" val="0"/>
+			<ConditionList sr="if">
+				<Condition sr="c0" ve="3">
+					<lhs>%STATE</lhs>
+					<op>2</op>
+					<rhs>1</rhs>
+				</Condition>
+			</ConditionList>
+		</Action>
+	</Task>
+	<Task sr="task203">
+		<cdate>1760930653222</cdate>
+		<edate>1760930653222</edate>
+		<id>203</id>
+		<pri>118</pri>
+		<Action sr="act0" ve="7">
+			<code>547</code>
+			<Str sr="arg0" ve="3">%PASS</Str>
+			<Str sr="arg1" ve="3">%new_val</Str>
+			<Int sr="arg2" val="0"/>
+			<Int sr="arg3" val="0"/>
+			<Int sr="arg4" val="0"/>
+			<Int sr="arg5" val="3"/>
+			<Int sr="arg6" val="1"/>
+		</Action>
+	</Task>
+	<Task sr="task204">
+		<cdate>1761009229751</cdate>
+		<edate>1761446468061</edate>
+		<id>204</id>
+		<pri>104</pri>
+		<Action sr="act0" ve="7">
+			<code>48</code>
+			<Str sr="arg0" ve="3">Settings</Str>
+			<Int sr="arg1" val="2"/>
+		</Action>
+		<Action sr="act1" ve="7">
+			<code>47</code>
+			<Str sr="arg0" ve="3">Setup 1</Str>
+			<Int sr="arg1" val="5"/>
+			<Int sr="arg10" val="1"/>
+			<Int sr="arg2" val="100"/>
+			<Int sr="arg3" val="100"/>
+			<Int sr="arg4" val="2"/>
+			<Int sr="arg5" val="0"/>
+			<Int sr="arg6" val="0"/>
+			<Int sr="arg7" val="1"/>
+			<Int sr="arg8" val="1"/>
+			<Int sr="arg9" val="1"/>
+		</Action>
+	</Task>
+	<Task sr="task205">
+		<cdate>1761017934106</cdate>
+		<edate>1761017934106</edate>
+		<id>205</id>
+		<pri>102</pri>
+		<Action sr="act0" ve="7">
+			<code>48</code>
+			<Str sr="arg0" ve="3">Home</Str>
+			<Int sr="arg1" val="2"/>
+		</Action>
+	</Task>
+	<Task sr="task206">
+		<cdate>1761527551587</cdate>
+		<edate>1761527551587</edate>
+		<id>206</id>
+		<pri>104</pri>
+		<Action sr="act0" ve="7">
+			<code>877</code>
+			<label>Delete proxy with old type</label>
+			<Str sr="arg0" ve="3">proxy_remove</Str>
+			<Int sr="arg1" val="0"/>
+			<Str sr="arg2" ve="3"/>
+			<Str sr="arg3" ve="3"/>
+			<Str sr="arg4" ve="3">password:%PASS</Str>
+			<Str sr="arg5" ve="3">server:host=127.0.0.1&amp;port=%PORT&amp;type=%TYPE&amp;udp=true</Str>
+			<Str sr="arg6" ve="3">quiet:true</Str>
+			<Str sr="arg7" ve="3">com.adguard.android</Str>
+			<Str sr="arg8" ve="3">com.adguard.android.receiver.AutomationReceiver</Str>
+			<Int sr="arg9" val="0"/>
+		</Action>
+		<Action sr="act1" ve="7">
+			<code>547</code>
+			<label>Save new type to variable</label>
+			<Str sr="arg0" ve="3">%TYPE</Str>
+			<Str sr="arg1" ve="3">%TYPE(%tap_index)</Str>
+			<Int sr="arg2" val="0"/>
+			<Int sr="arg3" val="0"/>
+			<Int sr="arg4" val="0"/>
+			<Int sr="arg5" val="3"/>
+			<Int sr="arg6" val="1"/>
+		</Action>
+		<Action sr="act2" ve="7">
+			<code>596</code>
+			<label>Convert new type to lowercase</label>
+			<Str sr="arg0" ve="3">%TYPE</Str>
+			<Int sr="arg1" val="28"/>
+			<Str sr="arg2" ve="3"/>
+			<Int sr="arg3" val="0"/>
+		</Action>
+		<Action sr="act3" ve="7">
+			<code>547</code>
+			<label>Set new type number for value restoring</label>
+			<Str sr="arg0" ve="3">%TYPEN</Str>
+			<Str sr="arg1" ve="3">%tap_index</Str>
+			<Int sr="arg2" val="0"/>
+			<Int sr="arg3" val="0"/>
+			<Int sr="arg4" val="0"/>
+			<Int sr="arg5" val="3"/>
+			<Int sr="arg6" val="1"/>
+		</Action>
+		<Action sr="act4" ve="7">
+			<code>877</code>
+			<label>Create proxy with new type</label>
+			<Str sr="arg0" ve="3">proxy_default</Str>
+			<Int sr="arg1" val="0"/>
+			<Str sr="arg2" ve="3"/>
+			<Str sr="arg3" ve="3"/>
+			<Str sr="arg4" ve="3">password:%PASS</Str>
+			<Str sr="arg5" ve="3">server:host=127.0.0.1&amp;port=%PORT&amp;type=%TYPE&amp;udp=true</Str>
+			<Str sr="arg6" ve="3">quiet:true</Str>
+			<Str sr="arg7" ve="3">com.adguard.android</Str>
+			<Str sr="arg8" ve="3">com.adguard.android.receiver.AutomationReceiver</Str>
+			<Int sr="arg9" val="0"/>
+			<ConditionList sr="if">
+				<Condition sr="c0" ve="3">
+					<lhs>%STATE</lhs>
+					<op>2</op>
+					<rhs>1</rhs>
+				</Condition>
+			</ConditionList>
+		</Action>
+	</Task>
+	<Task sr="task207">
+		<cdate>1761019648746</cdate>
+		<edate>1761019648746</edate>
+		<id>207</id>
+		<pri>112</pri>
+		<Action sr="act0" ve="7">
+			<code>48</code>
+			<Str sr="arg0" ve="3">Home</Str>
+			<Int sr="arg1" val="2"/>
+		</Action>
+	</Task>
+	<Task sr="task208">
+		<cdate>1761164588156</cdate>
+		<edate>1761164588156</edate>
+		<id>208</id>
+		<pri>102</pri>
+		<Action sr="act0" ve="7">
+			<code>48</code>
+			<Str sr="arg0" ve="3">Home</Str>
+			<Int sr="arg1" val="0"/>
+		</Action>
+		<Action sr="act1" ve="7">
+			<code>49</code>
+			<Str sr="arg0" ve="3">Home</Str>
+		</Action>
+	</Task>
+	<Task sr="task209">
+		<cdate>1761515319878</cdate>
+		<edate>1761515319878</edate>
+		<id>209</id>
+		<pri>120</pri>
+		<Action sr="act0" ve="7">
+			<code>47</code>
+			<Str sr="arg0" ve="3">Hint Type</Str>
+			<Int sr="arg1" val="5"/>
+			<Int sr="arg10" val="1"/>
+			<Int sr="arg2" val="100"/>
+			<Int sr="arg3" val="100"/>
+			<Int sr="arg4" val="2"/>
+			<Int sr="arg5" val="0"/>
+			<Int sr="arg6" val="0"/>
+			<Int sr="arg7" val="1"/>
+			<Int sr="arg8" val="1"/>
+			<Int sr="arg9" val="1"/>
+		</Action>
+	</Task>
+	<Task sr="task210">
+		<cdate>1761317248301</cdate>
+		<edate>1761522944176</edate>
+		<id>210</id>
+		<pri>104</pri>
+		<Action sr="act0" ve="7">
+			<code>37</code>
+			<ConditionList sr="if">
+				<bool0>And</bool0>
+				<Condition sr="c0" ve="3">
+					<lhs>%focused</lhs>
+					<op>2</op>
+					<rhs>false</rhs>
+				</Condition>
+				<Condition sr="c1" ve="3">
+					<lhs>%STATE</lhs>
+					<op>2</op>
+					<rhs>1</rhs>
+				</Condition>
+			</ConditionList>
+		</Action>
+		<Action sr="act1" ve="7">
+			<code>877</code>
+			<label>"Force enable" but quiter</label>
+			<Str sr="arg0" ve="3">proxy_default</Str>
+			<Int sr="arg1" val="0"/>
+			<Str sr="arg2" ve="3"/>
+			<Str sr="arg3" ve="3"/>
+			<Str sr="arg4" ve="3">server:host=127.0.0.1&amp;port=%PORT&amp;type=%TYPE&amp;udp=true</Str>
+			<Str sr="arg5" ve="3">password:%PASS</Str>
+			<Str sr="arg6" ve="3">quiet:true</Str>
+			<Str sr="arg7" ve="3">com.adguard.android</Str>
+			<Str sr="arg8" ve="3">com.adguard.android.receiver.AutomationReceiver</Str>
+			<Int sr="arg9" val="0"/>
+		</Action>
+		<Action sr="act2" ve="7">
+			<code>877</code>
+			<Str sr="arg0" ve="3">proxy_state</Str>
+			<Int sr="arg1" val="0"/>
+			<Str sr="arg2" ve="3"/>
+			<Str sr="arg3" ve="3"/>
+			<Str sr="arg4" ve="3">enable:true</Str>
+			<Str sr="arg5" ve="3">password:%PASS</Str>
+			<Str sr="arg6" ve="3">quiet:true</Str>
+			<Str sr="arg7" ve="3">com.adguard.android</Str>
+			<Str sr="arg8" ve="3">com.adguard.android.receiver.AutomationReceiver</Str>
+			<Int sr="arg9" val="0"/>
+		</Action>
+		<Action sr="act3" ve="7">
+			<code>38</code>
+		</Action>
+	</Task>
+	<Task sr="task211">
+		<cdate>1761359299305</cdate>
+		<edate>1761446457178</edate>
+		<id>211</id>
+		<pri>104</pri>
+		<Action sr="act0" ve="7">
+			<code>47</code>
+			<Str sr="arg0" ve="3">Hint Quiet</Str>
+			<Int sr="arg1" val="5"/>
+			<Int sr="arg10" val="1"/>
+			<Int sr="arg2" val="100"/>
+			<Int sr="arg3" val="100"/>
+			<Int sr="arg4" val="2"/>
+			<Int sr="arg5" val="0"/>
+			<Int sr="arg6" val="0"/>
+			<Int sr="arg7" val="1"/>
+			<Int sr="arg8" val="1"/>
+			<Int sr="arg9" val="1"/>
+		</Action>
+	</Task>
+	<Task sr="task212">
+		<cdate>1761359395073</cdate>
+		<edate>1761359395073</edate>
+		<id>212</id>
+		<pri>104</pri>
+		<Action sr="act0" ve="7">
+			<code>47</code>
+			<Str sr="arg0" ve="3">Hint VPN as VPN</Str>
+			<Int sr="arg1" val="5"/>
+			<Int sr="arg10" val="1"/>
+			<Int sr="arg2" val="100"/>
+			<Int sr="arg3" val="100"/>
+			<Int sr="arg4" val="2"/>
+			<Int sr="arg5" val="0"/>
+			<Int sr="arg6" val="0"/>
+			<Int sr="arg7" val="1"/>
+			<Int sr="arg8" val="1"/>
+			<Int sr="arg9" val="1"/>
+		</Action>
+	</Task>
+	<Task sr="task213">
+		<cdate>1761008732594</cdate>
+		<edate>1761008732594</edate>
+		<id>213</id>
+		<pri>106</pri>
+		<Action sr="act0" ve="7">
+			<code>48</code>
+			<Str sr="arg0" ve="3">Hint Quiet</Str>
+			<Int sr="arg1" val="2"/>
+		</Action>
+	</Task>
+	<Task sr="task214">
+		<cdate>1761008732594</cdate>
+		<edate>1761008732594</edate>
+		<id>214</id>
+		<pri>106</pri>
+		<Action sr="act0" ve="7">
+			<code>48</code>
+			<Str sr="arg0" ve="3">Hint VPN as VPN</Str>
+			<Int sr="arg1" val="2"/>
+		</Action>
+	</Task>
+	<Task sr="task215">
+		<cdate>1761008732594</cdate>
+		<edate>1761008732594</edate>
+		<id>215</id>
+		<pri>102</pri>
+		<Action sr="act0" ve="7">
+			<code>48</code>
+			<Str sr="arg0" ve="3">Setup 2</Str>
+			<Int sr="arg1" val="2"/>
+		</Action>
+		<Action sr="act1" ve="7">
+			<code>547</code>
+			<Str sr="arg0" ve="3">%FIRSTRUN</Str>
+			<Str sr="arg1" ve="3">3</Str>
+			<Int sr="arg2" val="0"/>
+			<Int sr="arg3" val="0"/>
+			<Int sr="arg4" val="0"/>
+			<Int sr="arg5" val="3"/>
+			<Int sr="arg6" val="1"/>
+		</Action>
+		<Action sr="act2" ve="7">
+			<code>47</code>
+			<Str sr="arg0" ve="3">Setup 3</Str>
+			<Int sr="arg1" val="5"/>
+			<Int sr="arg10" val="1"/>
+			<Int sr="arg2" val="100"/>
+			<Int sr="arg3" val="100"/>
+			<Int sr="arg4" val="0"/>
+			<Int sr="arg5" val="0"/>
+			<Int sr="arg6" val="0"/>
+			<Int sr="arg7" val="1"/>
+			<Int sr="arg8" val="1"/>
+			<Int sr="arg9" val="1"/>
+		</Action>
+	</Task>
+	<Task sr="task216">
+		<cdate>1761008732594</cdate>
+		<edate>1761008732594</edate>
+		<id>216</id>
+		<pri>116</pri>
+		<Action sr="act0" ve="7">
+			<code>48</code>
+			<Str sr="arg0" ve="3">Setup 2</Str>
+			<Int sr="arg1" val="2"/>
+		</Action>
+		<Action sr="act1" ve="7">
+			<code>547</code>
+			<Str sr="arg0" ve="3">%FIRSTRUN</Str>
+			<Str sr="arg1" ve="3">1</Str>
+			<Int sr="arg2" val="0"/>
+			<Int sr="arg3" val="0"/>
+			<Int sr="arg4" val="0"/>
+			<Int sr="arg5" val="3"/>
+			<Int sr="arg6" val="1"/>
+		</Action>
+		<Action sr="act2" ve="7">
+			<code>47</code>
+			<Str sr="arg0" ve="3">Setup 1</Str>
+			<Int sr="arg1" val="5"/>
+			<Int sr="arg10" val="1"/>
+			<Int sr="arg2" val="100"/>
+			<Int sr="arg3" val="100"/>
+			<Int sr="arg4" val="2"/>
+			<Int sr="arg5" val="0"/>
+			<Int sr="arg6" val="0"/>
+			<Int sr="arg7" val="1"/>
+			<Int sr="arg8" val="1"/>
+			<Int sr="arg9" val="1"/>
+		</Action>
+	</Task>
+	<Task sr="task217">
+		<cdate>1761008732594</cdate>
+		<edate>1761008732594</edate>
+		<id>217</id>
+		<pri>102</pri>
+		<Action sr="act0" ve="7">
+			<code>48</code>
+			<Str sr="arg0" ve="3">Setup 1</Str>
+			<Int sr="arg1" val="2"/>
+		</Action>
+		<Action sr="act1" ve="7">
+			<code>49</code>
+			<Str sr="arg0" ve="3">Setup 1</Str>
+		</Action>
+	</Task>
+	<Task sr="task218">
+		<cdate>1761008732594</cdate>
+		<edate>1761008732594</edate>
+		<id>218</id>
+		<pri>104</pri>
+		<Action sr="act0" ve="7">
+			<code>48</code>
+			<Str sr="arg0" ve="3">Setup 3</Str>
+			<Int sr="arg1" val="2"/>
+		</Action>
+		<Action sr="act1" ve="7">
+			<code>547</code>
+			<Str sr="arg0" ve="3">%FIRSTRUN</Str>
+			<Str sr="arg1" ve="3">4</Str>
+			<Int sr="arg2" val="0"/>
+			<Int sr="arg3" val="0"/>
+			<Int sr="arg4" val="0"/>
+			<Int sr="arg5" val="3"/>
+			<Int sr="arg6" val="1"/>
+		</Action>
+		<Action sr="act2" ve="7">
+			<code>47</code>
+			<Str sr="arg0" ve="3">Setup 4</Str>
+			<Int sr="arg1" val="5"/>
+			<Int sr="arg10" val="1"/>
+			<Int sr="arg2" val="100"/>
+			<Int sr="arg3" val="100"/>
+			<Int sr="arg4" val="2"/>
+			<Int sr="arg5" val="0"/>
+			<Int sr="arg6" val="0"/>
+			<Int sr="arg7" val="1"/>
+			<Int sr="arg8" val="1"/>
+			<Int sr="arg9" val="1"/>
+		</Action>
+		<Action sr="act3" ve="7">
+			<code>51</code>
+			<label>Assign PASS value to field if PASS isn't empty</label>
+			<se>false</se>
+			<Str sr="arg0" ve="3">Setup 4</Str>
+			<Str sr="arg1" ve="3">password</Str>
+			<Int sr="arg2" val="0"/>
+			<Str sr="arg3" ve="3">%PASS</Str>
+			<Str sr="arg4" ve="3"/>
+			<ConditionList sr="if">
+				<Condition sr="c0" ve="3">
+					<lhs>%PASS</lhs>
+					<op>12</op>
+					<rhs></rhs>
+				</Condition>
+			</ConditionList>
+		</Action>
+	</Task>
+	<Task sr="task219">
+		<cdate>1761008732594</cdate>
+		<edate>1761446618388</edate>
+		<id>219</id>
+		<pri>114</pri>
+		<Action sr="act0" ve="7">
+			<code>48</code>
+			<Str sr="arg0" ve="3">Setup 3</Str>
+			<Int sr="arg1" val="2"/>
+		</Action>
+		<Action sr="act1" ve="7">
+			<code>547</code>
+			<Str sr="arg0" ve="3">%FIRSTRUN</Str>
+			<Str sr="arg1" ve="3">2</Str>
+			<Int sr="arg2" val="0"/>
+			<Int sr="arg3" val="0"/>
+			<Int sr="arg4" val="0"/>
+			<Int sr="arg5" val="3"/>
+			<Int sr="arg6" val="1"/>
+		</Action>
+		<Action sr="act2" ve="7">
+			<code>47</code>
+			<Str sr="arg0" ve="3">Setup 2</Str>
+			<Int sr="arg1" val="5"/>
+			<Int sr="arg10" val="1"/>
+			<Int sr="arg2" val="100"/>
+			<Int sr="arg3" val="100"/>
+			<Int sr="arg4" val="2"/>
+			<Int sr="arg5" val="0"/>
+			<Int sr="arg6" val="0"/>
+			<Int sr="arg7" val="1"/>
+			<Int sr="arg8" val="1"/>
+			<Int sr="arg9" val="1"/>
+		</Action>
+	</Task>
+	<Task sr="task220">
+		<cdate>1761444081617</cdate>
+		<edate>1761444081617</edate>
+		<id>220</id>
+		<pri>106</pri>
+		<Action sr="act0" ve="7">
+			<code>216</code>
+			<Str sr="arg0" ve="3">com.adguard.integration</Str>
+		</Action>
+	</Task>
+	<Task sr="task221">
+		<cdate>1761527551587</cdate>
+		<edate>1761527551587</edate>
+		<id>221</id>
+		<pri>102</pri>
+		<Action sr="act0" ve="7">
+			<code>877</code>
+			<Str sr="arg0" ve="3">proxy_state</Str>
+			<Int sr="arg1" val="0"/>
+			<Str sr="arg2" ve="3"/>
+			<Str sr="arg3" ve="3"/>
+			<Str sr="arg4" ve="3">enable:false</Str>
+			<Str sr="arg5" ve="3">password:%PASS</Str>
+			<Str sr="arg6" ve="3">quiet:true</Str>
+			<Str sr="arg7" ve="3">com.adguard.android</Str>
+			<Str sr="arg8" ve="3">com.adguard.android.receiver.AutomationReceiver</Str>
+			<Int sr="arg9" val="0"/>
+		</Action>
+		<Action sr="act1" ve="7">
+			<code>877</code>
+			<label>Del http</label>
+			<on>false</on>
+			<Str sr="arg0" ve="3">proxy_remove</Str>
+			<Int sr="arg1" val="0"/>
+			<Str sr="arg2" ve="3"/>
+			<Str sr="arg3" ve="3"/>
+			<Str sr="arg4" ve="3">password:%PASS</Str>
+			<Str sr="arg5" ve="3">server:host=127.0.0.1&amp;port=%PORT&amp;type=http&amp;udp=true</Str>
+			<Str sr="arg6" ve="3">quiet:true</Str>
+			<Str sr="arg7" ve="3">com.adguard.android</Str>
+			<Str sr="arg8" ve="3">com.adguard.android.receiver.AutomationReceiver</Str>
+			<Int sr="arg9" val="0"/>
+		</Action>
+		<Action sr="act2" ve="7">
+			<code>877</code>
+			<label>Del https</label>
+			<on>false</on>
+			<Str sr="arg0" ve="3">proxy_remove</Str>
+			<Int sr="arg1" val="0"/>
+			<Str sr="arg2" ve="3"/>
+			<Str sr="arg3" ve="3"/>
+			<Str sr="arg4" ve="3">password:%PASS</Str>
+			<Str sr="arg5" ve="3">server:host=127.0.0.1&amp;port=%PORT&amp;type=https&amp;udp=true</Str>
+			<Str sr="arg6" ve="3">quiet:true</Str>
+			<Str sr="arg7" ve="3">com.adguard.android</Str>
+			<Str sr="arg8" ve="3">com.adguard.android.receiver.AutomationReceiver</Str>
+			<Int sr="arg9" val="0"/>
+		</Action>
+		<Action sr="act3" ve="7">
+			<code>877</code>
+			<label>Del socks4</label>
+			<on>false</on>
+			<Str sr="arg0" ve="3">proxy_remove</Str>
+			<Int sr="arg1" val="0"/>
+			<Str sr="arg2" ve="3"/>
+			<Str sr="arg3" ve="3"/>
+			<Str sr="arg4" ve="3">password:%PASS</Str>
+			<Str sr="arg5" ve="3">server:host=127.0.0.1&amp;port=%PORT&amp;type=socks4&amp;udp=true</Str>
+			<Str sr="arg6" ve="3">quiet:true</Str>
+			<Str sr="arg7" ve="3">com.adguard.android</Str>
+			<Str sr="arg8" ve="3">com.adguard.android.receiver.AutomationReceiver</Str>
+			<Int sr="arg9" val="0"/>
+		</Action>
+		<Action sr="act4" ve="7">
+			<code>877</code>
+			<label>Del socks5</label>
+			<on>false</on>
+			<Str sr="arg0" ve="3">proxy_remove</Str>
+			<Int sr="arg1" val="0"/>
+			<Str sr="arg2" ve="3"/>
+			<Str sr="arg3" ve="3"/>
+			<Str sr="arg4" ve="3">password:%PASS</Str>
+			<Str sr="arg5" ve="3">server:host=127.0.0.1&amp;port=%PORT&amp;type=socks5&amp;udp=true</Str>
+			<Str sr="arg6" ve="3">quiet:true</Str>
+			<Str sr="arg7" ve="3">com.adguard.android</Str>
+			<Str sr="arg8" ve="3">com.adguard.android.receiver.AutomationReceiver</Str>
+			<Int sr="arg9" val="0"/>
+		</Action>
+		<Action sr="act5" ve="7">
+			<code>547</code>
+			<Str sr="arg0" ve="3">%TYPE</Str>
+			<Str sr="arg1" ve="3">%TYPE(%tap_index)</Str>
+			<Int sr="arg2" val="0"/>
+			<Int sr="arg3" val="0"/>
+			<Int sr="arg4" val="0"/>
+			<Int sr="arg5" val="3"/>
+			<Int sr="arg6" val="1"/>
+		</Action>
+		<Action sr="act6" ve="7">
+			<code>596</code>
+			<Str sr="arg0" ve="3">%TYPE</Str>
+			<Int sr="arg1" val="28"/>
+			<Str sr="arg2" ve="3"/>
+			<Int sr="arg3" val="0"/>
+		</Action>
+		<Action sr="act7" ve="7">
+			<code>547</code>
+			<Str sr="arg0" ve="3">%TYPEN</Str>
+			<Str sr="arg1" ve="3">%tap_index</Str>
+			<Int sr="arg2" val="0"/>
+			<Int sr="arg3" val="0"/>
+			<Int sr="arg4" val="0"/>
+			<Int sr="arg5" val="3"/>
+			<Int sr="arg6" val="1"/>
+		</Action>
+	</Task>
+	<Task sr="task222">
+		<cdate>1761008732594</cdate>
+		<edate>1761008732594</edate>
+		<id>222</id>
+		<pri>102</pri>
+		<Action sr="act0" ve="7">
+			<code>48</code>
+			<Str sr="arg0" ve="3">Setup 4</Str>
+			<Int sr="arg1" val="2"/>
+		</Action>
+		<Action sr="act1" ve="7">
+			<code>547</code>
+			<Str sr="arg0" ve="3">%FIRSTRUN</Str>
+			<Str sr="arg1" ve="3">5</Str>
+			<Int sr="arg2" val="0"/>
+			<Int sr="arg3" val="0"/>
+			<Int sr="arg4" val="0"/>
+			<Int sr="arg5" val="3"/>
+			<Int sr="arg6" val="1"/>
+		</Action>
+		<Action sr="act2" ve="7">
+			<code>47</code>
+			<Str sr="arg0" ve="3">Setup 5</Str>
+			<Int sr="arg1" val="5"/>
+			<Int sr="arg10" val="1"/>
+			<Int sr="arg2" val="100"/>
+			<Int sr="arg3" val="100"/>
+			<Int sr="arg4" val="2"/>
+			<Int sr="arg5" val="0"/>
+			<Int sr="arg6" val="0"/>
+			<Int sr="arg7" val="1"/>
+			<Int sr="arg8" val="1"/>
+			<Int sr="arg9" val="1"/>
+		</Action>
+		<Action sr="act3" ve="7">
+			<code>51</code>
+			<label>Assign PORT value to field if PORT isn't empty</label>
+			<se>false</se>
+			<Str sr="arg0" ve="3">Setup 5</Str>
+			<Str sr="arg1" ve="3">port</Str>
+			<Int sr="arg2" val="0"/>
+			<Str sr="arg3" ve="3">%PORT</Str>
+			<Str sr="arg4" ve="3"/>
+			<ConditionList sr="if">
+				<Condition sr="c0" ve="3">
+					<lhs>%PORT</lhs>
+					<op>12</op>
+					<rhs></rhs>
+				</Condition>
+			</ConditionList>
+		</Action>
+	</Task>
+	<Task sr="task223">
+		<cdate>1761008732594</cdate>
+		<edate>1761446618388</edate>
+		<id>223</id>
+		<pri>124</pri>
+		<Action sr="act0" ve="7">
+			<code>48</code>
+			<Str sr="arg0" ve="3">Setup 4</Str>
+			<Int sr="arg1" val="2"/>
+		</Action>
+		<Action sr="act1" ve="7">
+			<code>547</code>
+			<Str sr="arg0" ve="3">%FIRSTRUN</Str>
+			<Str sr="arg1" ve="3">3</Str>
+			<Int sr="arg2" val="0"/>
+			<Int sr="arg3" val="0"/>
+			<Int sr="arg4" val="0"/>
+			<Int sr="arg5" val="3"/>
+			<Int sr="arg6" val="1"/>
+		</Action>
+		<Action sr="act2" ve="7">
+			<code>47</code>
+			<Str sr="arg0" ve="3">Setup 3</Str>
+			<Int sr="arg1" val="5"/>
+			<Int sr="arg10" val="1"/>
+			<Int sr="arg2" val="100"/>
+			<Int sr="arg3" val="100"/>
+			<Int sr="arg4" val="2"/>
+			<Int sr="arg5" val="0"/>
+			<Int sr="arg6" val="0"/>
+			<Int sr="arg7" val="1"/>
+			<Int sr="arg8" val="1"/>
+			<Int sr="arg9" val="1"/>
+		</Action>
+	</Task>
+	<Task sr="task224">
+		<cdate>1761444081617</cdate>
+		<edate>1761444081617</edate>
+		<id>224</id>
+		<pri>106</pri>
+		<Action sr="act0" ve="7">
+			<code>20</code>
+			<App sr="arg0">
+				<appClass>com.adguard.android.ui.activity.SplashActivity</appClass>
+				<appPkg>com.adguard.android</appPkg>
+				<label>AdGuard</label>
+			</App>
+			<Str sr="arg1" ve="3"/>
+			<Int sr="arg2" val="0"/>
+			<Int sr="arg3" val="0"/>
+		</Action>
+	</Task>
+	<Task sr="task225">
+		<cdate>1761624011016</cdate>
+		<edate>1761624011016</edate>
+		<id>225</id>
+		<pri>102</pri>
+		<Action sr="act0" ve="7">
+			<code>547</code>
+			<Str sr="arg0" ve="3">%PASS</Str>
+			<Str sr="arg1" ve="3">%new_val</Str>
+			<Int sr="arg2" val="0"/>
+			<Int sr="arg3" val="0"/>
+			<Int sr="arg4" val="0"/>
+			<Int sr="arg5" val="3"/>
+			<Int sr="arg6" val="1"/>
+		</Action>
+	</Task>
+	<Task sr="task226">
+		<cdate>1761444081617</cdate>
+		<edate>1761444081617</edate>
+		<id>226</id>
+		<pri>102</pri>
+		<Action sr="act0" ve="7">
+			<code>20</code>
+			<App sr="arg0">
+				<appClass>com.adguard.android.ui.activity.SplashActivity</appClass>
+				<appPkg>com.adguard.android</appPkg>
+				<label>AdGuard</label>
+			</App>
+			<Str sr="arg1" ve="3"/>
+			<Int sr="arg2" val="0"/>
+			<Int sr="arg3" val="0"/>
+		</Action>
+	</Task>
+	<Task sr="task227">
+		<cdate>1761008732594</cdate>
+		<edate>1761008732594</edate>
+		<id>227</id>
+		<pri>102</pri>
+		<Action sr="act0" ve="7">
+			<code>48</code>
+			<Str sr="arg0" ve="3">Setup 5</Str>
+			<Int sr="arg1" val="2"/>
+		</Action>
+		<Action sr="act1" ve="7">
+			<code>547</code>
+			<Str sr="arg0" ve="3">%FIRSTRUN</Str>
+			<Str sr="arg1" ve="3">0</Str>
+			<Int sr="arg2" val="0"/>
+			<Int sr="arg3" val="0"/>
+			<Int sr="arg4" val="0"/>
+			<Int sr="arg5" val="3"/>
+			<Int sr="arg6" val="1"/>
+		</Action>
+		<Action sr="act2" ve="7">
+			<code>547</code>
+			<label>Set PORT after setup if empty</label>
+			<Str sr="arg0" ve="3">%PORT</Str>
+			<Str sr="arg1" ve="3">8080</Str>
+			<Int sr="arg2" val="0"/>
+			<Int sr="arg3" val="0"/>
+			<Int sr="arg4" val="0"/>
+			<Int sr="arg5" val="3"/>
+			<Int sr="arg6" val="1"/>
+			<ConditionList sr="if">
+				<bool0>And</bool0>
+				<Condition sr="c0" ve="3">
+					<lhs>%FIRSTRUN</lhs>
+					<op>0</op>
+					<rhs>0</rhs>
+				</Condition>
+				<Condition sr="c1" ve="3">
+					<lhs>%PORT</lhs>
+					<op>13</op>
+					<rhs></rhs>
+				</Condition>
+			</ConditionList>
+		</Action>
+		<Action sr="act3" ve="7">
+			<code>548</code>
+			<Str sr="arg0" ve="3">Well done, let's start</Str>
+			<Int sr="arg1" val="0"/>
+			<Str sr="arg10" ve="3"/>
+			<Int sr="arg11" val="1"/>
+			<Int sr="arg12" val="0"/>
+			<Str sr="arg13" ve="3"/>
+			<Int sr="arg14" val="0"/>
+			<Str sr="arg15" ve="3"/>
+			<Int sr="arg2" val="0"/>
+			<Str sr="arg3" ve="3"/>
+			<Str sr="arg4" ve="3"/>
+			<Str sr="arg5" ve="3"/>
+			<Str sr="arg6" ve="3"/>
+			<Str sr="arg7" ve="3"/>
+			<Str sr="arg8" ve="3"/>
+			<Int sr="arg9" val="1"/>
+		</Action>
+		<Action sr="act4" ve="7">
+			<code>30</code>
+			<Int sr="arg0" val="500"/>
+			<Int sr="arg1" val="1"/>
+			<Int sr="arg2" val="0"/>
+			<Int sr="arg3" val="0"/>
+			<Int sr="arg4" val="0"/>
+		</Action>
+		<Action sr="act5" ve="7">
+			<code>47</code>
+			<Str sr="arg0" ve="3">Home</Str>
+			<Int sr="arg1" val="5"/>
+			<Int sr="arg10" val="1"/>
+			<Int sr="arg2" val="100"/>
+			<Int sr="arg3" val="100"/>
+			<Int sr="arg4" val="0"/>
+			<Int sr="arg5" val="0"/>
+			<Int sr="arg6" val="0"/>
+			<Int sr="arg7" val="1"/>
+			<Int sr="arg8" val="1"/>
+			<Int sr="arg9" val="1"/>
+		</Action>
+		<Action sr="act6" ve="7">
+			<code>49</code>
+			<Str sr="arg0" ve="3">Setup 5</Str>
+		</Action>
+	</Task>
+	<Task sr="task228">
+		<cdate>1761171830920</cdate>
+		<edate>1761453358861</edate>
+		<id>228</id>
+		<pri>104</pri>
+		<Action sr="act0" ve="7">
+			<code>37</code>
+			<ConditionList sr="if">
+				<Condition sr="c0" ve="3">
+					<lhs>%new_val</lhs>
+					<op>2</op>
+					<rhs>on</rhs>
+				</Condition>
+			</ConditionList>
+		</Action>
+		<Action sr="act1" ve="7">
+			<code>547</code>
+			<label>If enabled, don't check proxy state</label>
+			<Str sr="arg0" ve="3">%VPNONLY</Str>
+			<Str sr="arg1" ve="3">1</Str>
+			<Int sr="arg2" val="0"/>
+			<Int sr="arg3" val="0"/>
+			<Int sr="arg4" val="0"/>
+			<Int sr="arg5" val="3"/>
+			<Int sr="arg6" val="1"/>
+		</Action>
+		<Action sr="act2" ve="7">
+			<code>43</code>
+		</Action>
+		<Action sr="act3" ve="7">
+			<code>547</code>
+			<Str sr="arg0" ve="3">%VPNONLY</Str>
+			<Str sr="arg1" ve="3">0</Str>
+			<Int sr="arg2" val="0"/>
+			<Int sr="arg3" val="0"/>
+			<Int sr="arg4" val="0"/>
+			<Int sr="arg5" val="3"/>
+			<Int sr="arg6" val="1"/>
+		</Action>
+		<Action sr="act4" ve="7">
+			<code>38</code>
+		</Action>
+	</Task>
+	<Task sr="task229">
+		<cdate>1761008732594</cdate>
+		<edate>1761008732594</edate>
+		<id>229</id>
+		<pri>110</pri>
+		<Action sr="act0" ve="7">
+			<code>48</code>
+			<Str sr="arg0" ve="3">Setup 5</Str>
+			<Int sr="arg1" val="2"/>
+		</Action>
+		<Action sr="act1" ve="7">
+			<code>547</code>
+			<Str sr="arg0" ve="3">%FIRSTRUN</Str>
+			<Str sr="arg1" ve="3">4</Str>
+			<Int sr="arg2" val="0"/>
+			<Int sr="arg3" val="0"/>
+			<Int sr="arg4" val="0"/>
+			<Int sr="arg5" val="3"/>
+			<Int sr="arg6" val="1"/>
+		</Action>
+		<Action sr="act2" ve="7">
+			<code>47</code>
+			<Str sr="arg0" ve="3">Setup 4</Str>
+			<Int sr="arg1" val="5"/>
+			<Int sr="arg10" val="1"/>
+			<Int sr="arg2" val="100"/>
+			<Int sr="arg3" val="100"/>
+			<Int sr="arg4" val="2"/>
+			<Int sr="arg5" val="0"/>
+			<Int sr="arg6" val="0"/>
+			<Int sr="arg7" val="1"/>
+			<Int sr="arg8" val="1"/>
+			<Int sr="arg9" val="1"/>
+		</Action>
+	</Task>
+	<Task sr="task230">
+		<cdate>1760929514223</cdate>
+		<edate>1765236369369</edate>
+		<id>230</id>
+		<nme>Launcher</nme>
+		<pri>100</pri>
+		<Action sr="act0" ve="7">
+			<code>138</code>
+			<label>Notification key icon</label>
+			<Img sr="arg0" ve="2">
+				<nme>mw_communication_vpn_key</nme>
+			</Img>
+		</Action>
+		<Action sr="act1" ve="7">
+			<code>162</code>
+			<label>Плитка</label>
+			<on>false</on>
+			<Int sr="arg0" val="0"/>
+			<Str sr="arg1" ve="3">Launcher</Str>
+			<Str sr="arg10" ve="3"/>
+			<Str sr="arg11" ve="3"/>
+			<Str sr="arg12" ve="3"/>
+			<Int sr="arg2" val="0"/>
+			<Int sr="arg3" val="1"/>
+			<Str sr="arg4" ve="3"/>
+			<Str sr="arg5" ve="3"/>
+			<Str sr="arg6" ve="3">AutoGuard</Str>
+			<Str sr="arg7" ve="3">android.resource://net.dinglisch.android.taskerm/drawable/mw_communication_vpn_key</Str>
+			<Str sr="arg8" ve="3">Disable</Str>
+			<Str sr="arg9" ve="3"/>
+		</Action>
+		<Action sr="act10" ve="7">
+			<code>319</code>
+			<on>false</on>
+			<Str sr="arg0" ve="3">android.permission.SYSTEM_ALERT_WINDOW</Str>
+			<Str sr="arg1" ve="3">Can't see AdGuard</Str>
+		</Action>
+		<Action sr="act11" ve="7">
+			<code>547</code>
+			<label>Принудит. интенты для AdG 4 (врем)</label>
+			<Str sr="arg0" ve="3">%Intent</Str>
+			<Str sr="arg1" ve="3">receiver</Str>
+			<Int sr="arg2" val="0"/>
+			<Int sr="arg3" val="0"/>
+			<Int sr="arg4" val="0"/>
+			<Int sr="arg5" val="3"/>
+			<Int sr="arg6" val="1"/>
+		</Action>
+		<Action sr="act12" ve="7">
+			<code>37</code>
+			<coll>false</coll>
+			<label>If intent type isn't set</label>
+			<ConditionList sr="if">
+				<Condition sr="c0" ve="3">
+					<lhs>%Intent</lhs>
+					<op>13</op>
+					<rhs></rhs>
+				</Condition>
+			</ConditionList>
+		</Action>
+		<Action sr="act13" ve="7">
+			<code>335</code>
+			<label>Get info about AdGuard</label>
+			<se>false</se>
+			<Bundle sr="arg0">
+				<Vals sr="val">
+					<net.dinglisch.android.tasker.RELEVANT_VARIABLES>&lt;StringArray sr=""&gt;&lt;_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES0&gt;%app_apk
+APK File
+The full path to the APK of the app. You can use the Copy File action to copy it somewhere and rename it if you like.&lt;/_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES0&gt;&lt;_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES1&gt;%app_uid
+APK File
+The kernel user-ID that has been assigned to this application; currently this is not a unique ID&lt;/_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES1&gt;&lt;_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES2&gt;%app_activity_classes()
+Activity Classes
+The class names of all the activities that this app has&lt;/_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES2&gt;&lt;_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES3&gt;%app_activity_enabled()
+Activity Enabled
+For each activity, true if enabled, false if not&lt;/_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES3&gt;&lt;_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES4&gt;%app_activity_exported()
+Activity Exported
+For each activity, true if exported, false if not&lt;/_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES4&gt;&lt;_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES5&gt;%app_activity_labels()
+Activity Labels
+The name of all the activities that this app has&lt;/_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES5&gt;&lt;_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES6&gt;%app_enabled
+Enabled
+true if app is enabled, false if not&lt;/_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES6&gt;&lt;_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES7&gt;%app_install_time
+First Install Time
+Time in seconds since EPOCH that app was first installed&lt;/_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES7&gt;&lt;_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES8&gt;%app_icon
+Icon
+Icon for the app&lt;/_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES8&gt;&lt;_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES9&gt;%app_installer_package
+Installer Package Name
+Package name for the app that installed this app. Can be used to check if app was installed from Google Play.&lt;/_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES9&gt;&lt;_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES10&gt;%app_is_default_launcher
+Is Default Launcher
+true if the app is the current launcher in use, false if not&lt;/_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES10&gt;&lt;_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES11&gt;%app_is_launcher
+Is Launcher
+true if the app is a launcher app, false if not&lt;/_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES11&gt;&lt;_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES12&gt;%app_update_time
+Last Update Time
+Time in seconds since EPOCH that app was last updated&lt;/_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES12&gt;&lt;_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES13&gt;%app_min_sdk
+Minimum SDK
+Minimum SDK version for the app.&lt;/_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES13&gt;&lt;_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES14&gt;%app_name
+Name
+Name of the App&lt;/_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES14&gt;&lt;_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES15&gt;%app_package
+Package
+Unique package name for the app&lt;/_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES15&gt;&lt;_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES16&gt;%app_version_code
+Package Version
+The version of the app in code format (a number)&lt;/_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES16&gt;&lt;_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES17&gt;%app_version_label
+Package Version Label
+The version of the app as you usually see it&lt;/_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES17&gt;&lt;_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES18&gt;%app_permissions()
+Permissions
+Permissions the app requests.&lt;/_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES18&gt;&lt;_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES19&gt;%app_permissions_granted()
+Permissions Granted
+Corresponds to the %permissions array. true or false depending if the permission has been granted or not.&lt;/_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES19&gt;&lt;_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES20&gt;%app_apk_public_source_dirs()
+Public Source Directories
+Full path to the publicly available parts of splitSourceDirs, including resources and manifest.&lt;/_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES20&gt;&lt;_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES21&gt;%app_target_sdk
+Target SDK
+Target SDK version for the app.&lt;/_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES21&gt;&lt;/StringArray&gt;</net.dinglisch.android.tasker.RELEVANT_VARIABLES>
+					<net.dinglisch.android.tasker.RELEVANT_VARIABLES-type>[Ljava.lang.String;</net.dinglisch.android.tasker.RELEVANT_VARIABLES-type>
+				</Vals>
+			</Bundle>
+			<Str sr="arg1" ve="3">com.adguard.android</Str>
+			<Str sr="arg2" ve="3"/>
+			<Int sr="arg3" val="0"/>
+			<Int sr="arg4" val="1"/>
+		</Action>
+		<Action sr="act14" ve="7">
+			<code>37</code>
+			<coll>false</coll>
+			<label>If version is still empty</label>
+			<ConditionList sr="if">
+				<Condition sr="c0" ve="3">
+					<lhs>%app_version_label</lhs>
+					<op>13</op>
+					<rhs></rhs>
+				</Condition>
+			</ConditionList>
+		</Action>
+		<Action sr="act15" ve="7">
+			<code>47</code>
+			<label>AdGuard isn't installed</label>
+			<Str sr="arg0" ve="3">No AdGuard</Str>
+			<Int sr="arg1" val="5"/>
+			<Int sr="arg10" val="1"/>
+			<Int sr="arg2" val="100"/>
+			<Int sr="arg3" val="100"/>
+			<Int sr="arg4" val="2"/>
+			<Int sr="arg5" val="0"/>
+			<Int sr="arg6" val="0"/>
+			<Int sr="arg7" val="1"/>
+			<Int sr="arg8" val="1"/>
+			<Int sr="arg9" val="1"/>
+		</Action>
+		<Action sr="act16" ve="7">
+			<code>43</code>
+			<label>If version has been received</label>
+		</Action>
+		<Action sr="act17" ve="7">
+			<code>597</code>
+			<label>Cut it to the 1st character</label>
+			<Str sr="arg0" ve="3">%app_version_label</Str>
+			<Int sr="arg1" val="1"/>
+			<Int sr="arg2" val="1"/>
+			<Int sr="arg3" val="0"/>
+			<Str sr="arg4" ve="3">%app_version_label</Str>
+		</Action>
+		<Action sr="act18" ve="7">
+			<code>549</code>
+			<label>If it ≠ 3 or 4, clear it</label>
+			<Str sr="arg0" ve="3">%app_version_label</Str>
+			<Int sr="arg1" val="0"/>
+			<Int sr="arg2" val="0"/>
+			<Int sr="arg3" val="0"/>
+			<ConditionList sr="if">
+				<bool0>And</bool0>
+				<Condition sr="c0" ve="3">
+					<lhs>%app_version_label</lhs>
+					<op>1</op>
+					<rhs>3</rhs>
+				</Condition>
+				<Condition sr="c1" ve="3">
+					<lhs>%app_version_label</lhs>
+					<op>1</op>
+					<rhs>4</rhs>
+				</Condition>
+			</ConditionList>
+		</Action>
+		<Action sr="act19" ve="7">
+			<code>37</code>
+			<coll>false</coll>
+			<label>If = 4</label>
+			<ConditionList sr="if">
+				<Condition sr="c0" ve="3">
+					<lhs>%app_version_label</lhs>
+					<op>0</op>
+					<rhs>4</rhs>
+				</Condition>
+			</ConditionList>
+		</Action>
+		<Action sr="act2" ve="7">
+			<code>162</code>
+			<on>false</on>
+			<Int sr="arg0" val="0"/>
+			<Str sr="arg1" ve="3"/>
+			<Str sr="arg10" ve="3"/>
+			<Str sr="arg11" ve="3"/>
+			<Str sr="arg12" ve="3"/>
+			<Int sr="arg2" val="1"/>
+			<Int sr="arg3" val="0"/>
+			<Str sr="arg4" ve="3"/>
+			<Str sr="arg5" ve="3"/>
+			<Str sr="arg6" ve="3"/>
+			<Str sr="arg7" ve="3"/>
+			<Str sr="arg8" ve="3"/>
+			<Str sr="arg9" ve="3"/>
+		</Action>
+		<Action sr="act20" ve="7">
+			<code>547</code>
+			<label>New intents (AdGuard 4.x)</label>
+			<Str sr="arg0" ve="3">%Intent</Str>
+			<Str sr="arg1" ve="3">receiver</Str>
+			<Int sr="arg2" val="0"/>
+			<Int sr="arg3" val="0"/>
+			<Int sr="arg4" val="0"/>
+			<Int sr="arg5" val="3"/>
+			<Int sr="arg6" val="1"/>
+		</Action>
+		<Action sr="act21" ve="7">
+			<code>43</code>
+			<label>If = 3</label>
+		</Action>
+		<Action sr="act22" ve="7">
+			<code>547</code>
+			<label>Legacy intents (AdGuard v3.x)</label>
+			<Str sr="arg0" ve="3">%Intent</Str>
+			<Str sr="arg1" ve="3">receivers</Str>
+			<Int sr="arg2" val="0"/>
+			<Int sr="arg3" val="0"/>
+			<Int sr="arg4" val="0"/>
+			<Int sr="arg5" val="3"/>
+			<Int sr="arg6" val="1"/>
+		</Action>
+		<Action sr="act23" ve="7">
+			<code>38</code>
+		</Action>
+		<Action sr="act24" ve="7">
+			<code>38</code>
+		</Action>
+		<Action sr="act25" ve="7">
+			<code>38</code>
+		</Action>
+		<Action sr="act26" ve="7">
+			<code>547</code>
+			<label>Set variables</label>
+			<Str sr="arg0" ve="3">%FIRSTRUN</Str>
+			<Str sr="arg1" ve="3">1</Str>
+			<Int sr="arg2" val="0"/>
+			<Int sr="arg3" val="0"/>
+			<Int sr="arg4" val="0"/>
+			<Int sr="arg5" val="3"/>
+			<Int sr="arg6" val="1"/>
+			<ConditionList sr="if">
+				<Condition sr="c0" ve="3">
+					<lhs>%FIRSTRUN</lhs>
+					<op>13</op>
+					<rhs></rhs>
+				</Condition>
+			</ConditionList>
+		</Action>
+		<Action sr="act27" ve="7">
+			<code>37</code>
+			<coll>true</coll>
+			<ConditionList sr="if">
+				<bool0>Or</bool0>
+				<Condition sr="c0" ve="3">
+					<lhs>%TYPE</lhs>
+					<op>13</op>
+					<rhs></rhs>
+				</Condition>
+				<Condition sr="c1" ve="3">
+					<lhs>%TYPEN</lhs>
+					<op>13</op>
+					<rhs></rhs>
+				</Condition>
+			</ConditionList>
+		</Action>
+		<Action sr="act28" ve="7">
+			<code>354</code>
+			<Str sr="arg0" ve="3">%TYPE</Str>
+			<Str sr="arg1" ve="3">HTTP/HTTPS/SOCKS4/SOCKS5</Str>
+			<Str sr="arg2" ve="3">/</Str>
+		</Action>
+		<Action sr="act29" ve="7">
+			<code>547</code>
+			<Str sr="arg0" ve="3">%TYPE</Str>
+			<Str sr="arg1" ve="3">http</Str>
+			<Int sr="arg2" val="0"/>
+			<Int sr="arg3" val="0"/>
+			<Int sr="arg4" val="0"/>
+			<Int sr="arg5" val="3"/>
+			<Int sr="arg6" val="1"/>
+		</Action>
+		<Action sr="act3" ve="7">
+			<code>877</code>
+			<label>О</label>
+			<on>false</on>
+			<Str sr="arg0" ve="3">android.settings.APPLICATION_DETAILS_SETTINGS</Str>
+			<Int sr="arg1" val="0"/>
+			<Str sr="arg2" ve="3"/>
+			<Str sr="arg3" ve="3">package:com.adguard.integration#overlay</Str>
+			<Str sr="arg4" ve="3"/>
+			<Str sr="arg5" ve="3"/>
+			<Str sr="arg6" ve="3"/>
+			<Str sr="arg7" ve="3"/>
+			<Str sr="arg8" ve="3"/>
+			<Int sr="arg9" val="1"/>
+		</Action>
+		<Action sr="act30" ve="7">
+			<code>547</code>
+			<Str sr="arg0" ve="3">%TYPEN</Str>
+			<Str sr="arg1" ve="3">1</Str>
+			<Int sr="arg2" val="0"/>
+			<Int sr="arg3" val="0"/>
+			<Int sr="arg4" val="0"/>
+			<Int sr="arg5" val="3"/>
+			<Int sr="arg6" val="1"/>
+		</Action>
+		<Action sr="act31" ve="7">
+			<code>38</code>
+		</Action>
+		<Action sr="act32" ve="7">
+			<code>37</code>
+			<coll>true</coll>
+			<ConditionList sr="if">
+				<bool0>Or</bool0>
+				<Condition sr="c0" ve="3">
+					<lhs>%QUIET</lhs>
+					<op>13</op>
+					<rhs></rhs>
+				</Condition>
+				<Condition sr="c1" ve="3">
+					<lhs>%QUIETN</lhs>
+					<op>13</op>
+					<rhs></rhs>
+				</Condition>
+			</ConditionList>
+		</Action>
+		<Action sr="act33" ve="7">
+			<code>547</code>
+			<Str sr="arg0" ve="3">%QUIET</Str>
+			<Str sr="arg1" ve="3">false</Str>
+			<Int sr="arg2" val="0"/>
+			<Int sr="arg3" val="0"/>
+			<Int sr="arg4" val="0"/>
+			<Int sr="arg5" val="3"/>
+			<Int sr="arg6" val="1"/>
+		</Action>
+		<Action sr="act34" ve="7">
+			<code>547</code>
+			<Str sr="arg0" ve="3">%QUIETN</Str>
+			<Str sr="arg1" ve="3">0</Str>
+			<Int sr="arg2" val="0"/>
+			<Int sr="arg3" val="0"/>
+			<Int sr="arg4" val="0"/>
+			<Int sr="arg5" val="3"/>
+			<Int sr="arg6" val="1"/>
+		</Action>
+		<Action sr="act35" ve="7">
+			<code>38</code>
+		</Action>
+		<Action sr="act36" ve="7">
+			<code>547</code>
+			<Str sr="arg0" ve="3">%VPNONLY</Str>
+			<Str sr="arg1" ve="3">0</Str>
+			<Int sr="arg2" val="0"/>
+			<Int sr="arg3" val="0"/>
+			<Int sr="arg4" val="0"/>
+			<Int sr="arg5" val="3"/>
+			<Int sr="arg6" val="1"/>
+			<ConditionList sr="if">
+				<Condition sr="c0" ve="3">
+					<lhs>%VPNONLY</lhs>
+					<op>13</op>
+					<rhs></rhs>
+				</Condition>
+			</ConditionList>
+		</Action>
+		<Action sr="act37" ve="7">
+			<code>37</code>
+			<coll>false</coll>
+			<label>Show setup if intent type is set and FIRSTRUN = 1 to 5</label>
+			<ConditionList sr="if">
+				<bool0>And</bool0>
+				<bool1>And</bool1>
+				<Condition sr="c0" ve="3">
+					<lhs>%FIRSTRUN</lhs>
+					<op>1</op>
+					<rhs>0</rhs>
+				</Condition>
+				<Condition sr="c1" ve="3">
+					<lhs>%FIRSTRUN</lhs>
+					<op>6</op>
+					<rhs>6</rhs>
+				</Condition>
+				<Condition sr="c2" ve="3">
+					<lhs>%Intent</lhs>
+					<op>12</op>
+					<rhs></rhs>
+				</Condition>
+			</ConditionList>
+		</Action>
+		<Action sr="act38" ve="7">
+			<code>47</code>
+			<Str sr="arg0" ve="3">Setup 1</Str>
+			<Int sr="arg1" val="5"/>
+			<Int sr="arg10" val="0"/>
+			<Int sr="arg2" val="100"/>
+			<Int sr="arg3" val="100"/>
+			<Int sr="arg4" val="2"/>
+			<Int sr="arg5" val="0"/>
+			<Int sr="arg6" val="0"/>
+			<Int sr="arg7" val="1"/>
+			<Int sr="arg8" val="0"/>
+			<Int sr="arg9" val="1"/>
+			<ConditionList sr="if">
+				<Condition sr="c0" ve="3">
+					<lhs>%FIRSTRUN</lhs>
+					<op>0</op>
+					<rhs>1</rhs>
+				</Condition>
+			</ConditionList>
+		</Action>
+		<Action sr="act39" ve="7">
+			<code>47</code>
+			<Str sr="arg0" ve="3">Setup 2</Str>
+			<Int sr="arg1" val="5"/>
+			<Int sr="arg10" val="0"/>
+			<Int sr="arg2" val="100"/>
+			<Int sr="arg3" val="100"/>
+			<Int sr="arg4" val="2"/>
+			<Int sr="arg5" val="0"/>
+			<Int sr="arg6" val="0"/>
+			<Int sr="arg7" val="1"/>
+			<Int sr="arg8" val="0"/>
+			<Int sr="arg9" val="1"/>
+			<ConditionList sr="if">
+				<Condition sr="c0" ve="3">
+					<lhs>%FIRSTRUN</lhs>
+					<op>0</op>
+					<rhs>2</rhs>
+				</Condition>
+			</ConditionList>
+		</Action>
+		<Action sr="act4" ve="7">
+			<code>877</code>
+			<label>Буд</label>
+			<on>false</on>
+			<Str sr="arg0" ve="3">android.settings.REQUEST_SCHEDULE_EXACT_ALARM</Str>
+			<Int sr="arg1" val="0"/>
+			<Str sr="arg2" ve="3"/>
+			<Str sr="arg3" ve="3">package:com.adguard.integration</Str>
+			<Str sr="arg4" ve="3"/>
+			<Str sr="arg5" ve="3"/>
+			<Str sr="arg6" ve="3"/>
+			<Str sr="arg7" ve="3"/>
+			<Str sr="arg8" ve="3"/>
+			<Int sr="arg9" val="1"/>
+		</Action>
+		<Action sr="act40" ve="7">
+			<code>47</code>
+			<Str sr="arg0" ve="3">Setup 3</Str>
+			<Int sr="arg1" val="5"/>
+			<Int sr="arg10" val="0"/>
+			<Int sr="arg2" val="100"/>
+			<Int sr="arg3" val="100"/>
+			<Int sr="arg4" val="2"/>
+			<Int sr="arg5" val="0"/>
+			<Int sr="arg6" val="0"/>
+			<Int sr="arg7" val="1"/>
+			<Int sr="arg8" val="0"/>
+			<Int sr="arg9" val="1"/>
+			<ConditionList sr="if">
+				<Condition sr="c0" ve="3">
+					<lhs>%FIRSTRUN</lhs>
+					<op>0</op>
+					<rhs>3</rhs>
+				</Condition>
+			</ConditionList>
+		</Action>
+		<Action sr="act41" ve="7">
+			<code>47</code>
+			<Str sr="arg0" ve="3">Setup 4</Str>
+			<Int sr="arg1" val="5"/>
+			<Int sr="arg10" val="0"/>
+			<Int sr="arg2" val="100"/>
+			<Int sr="arg3" val="100"/>
+			<Int sr="arg4" val="2"/>
+			<Int sr="arg5" val="0"/>
+			<Int sr="arg6" val="0"/>
+			<Int sr="arg7" val="1"/>
+			<Int sr="arg8" val="0"/>
+			<Int sr="arg9" val="1"/>
+			<ConditionList sr="if">
+				<Condition sr="c0" ve="3">
+					<lhs>%FIRSTRUN</lhs>
+					<op>0</op>
+					<rhs>4</rhs>
+				</Condition>
+			</ConditionList>
+		</Action>
+		<Action sr="act42" ve="7">
+			<code>47</code>
+			<Str sr="arg0" ve="3">Setup 5</Str>
+			<Int sr="arg1" val="5"/>
+			<Int sr="arg10" val="0"/>
+			<Int sr="arg2" val="100"/>
+			<Int sr="arg3" val="100"/>
+			<Int sr="arg4" val="2"/>
+			<Int sr="arg5" val="0"/>
+			<Int sr="arg6" val="0"/>
+			<Int sr="arg7" val="1"/>
+			<Int sr="arg8" val="0"/>
+			<Int sr="arg9" val="1"/>
+			<ConditionList sr="if">
+				<Condition sr="c0" ve="3">
+					<lhs>%FIRSTRUN</lhs>
+					<op>0</op>
+					<rhs>5</rhs>
+				</Condition>
+			</ConditionList>
+		</Action>
+		<Action sr="act43" ve="7">
+			<code>43</code>
+			<label>Else show home screen</label>
+		</Action>
+		<Action sr="act44" ve="7">
+			<code>47</code>
+			<label>Only if intent type is set</label>
+			<Str sr="arg0" ve="3">Home</Str>
+			<Int sr="arg1" val="5"/>
+			<Int sr="arg10" val="1"/>
+			<Int sr="arg2" val="100"/>
+			<Int sr="arg3" val="100"/>
+			<Int sr="arg4" val="5"/>
+			<Int sr="arg5" val="0"/>
+			<Int sr="arg6" val="0"/>
+			<Int sr="arg7" val="1"/>
+			<Int sr="arg8" val="1"/>
+			<Int sr="arg9" val="1"/>
+			<ConditionList sr="if">
+				<Condition sr="c0" ve="3">
+					<lhs>%Intent</lhs>
+					<op>12</op>
+					<rhs></rhs>
+				</Condition>
+			</ConditionList>
+		</Action>
+		<Action sr="act45" ve="7">
+			<code>50</code>
+			<label>Restore settings</label>
+			<se>false</se>
+			<Str sr="arg0" ve="3">Home</Str>
+			<Str sr="arg1" ve="3">main_switch</Str>
+			<Int sr="arg2">
+				<var>%STATE</var>
+			</Int>
+			<ConditionList sr="if">
+				<Condition sr="c0" ve="3">
+					<lhs>%Intent</lhs>
+					<op>12</op>
+					<rhs></rhs>
+				</Condition>
+			</ConditionList>
+		</Action>
+		<Action sr="act46" ve="7">
+			<code>38</code>
+		</Action>
+		<Action sr="act5" ve="7">
+			<code>877</code>
+			<label>Доступ</label>
+			<on>false</on>
+			<Str sr="arg0" ve="3">android.settings.USAGE_ACCESS_SETTINGS</Str>
+			<Int sr="arg1" val="0"/>
+			<Str sr="arg2" ve="3"/>
+			<Str sr="arg3" ve="3"/>
+			<Str sr="arg4" ve="3"/>
+			<Str sr="arg5" ve="3"/>
+			<Str sr="arg6" ve="3"/>
+			<Str sr="arg7" ve="3"/>
+			<Str sr="arg8" ve="3"/>
+			<Int sr="arg9" val="1"/>
+		</Action>
+		<Action sr="act6" ve="7">
+			<code>877</code>
+			<on>false</on>
+			<Str sr="arg0" ve="3">android.settings.APPLICATION_DETAILS_SETTINGS</Str>
+			<Int sr="arg1" val="0"/>
+			<Str sr="arg2" ve="3"/>
+			<Str sr="arg3" ve="3">package:com.adguard.android</Str>
+			<Str sr="arg4" ve="3"/>
+			<Str sr="arg5" ve="3"/>
+			<Str sr="arg6" ve="3"/>
+			<Str sr="arg7" ve="3"/>
+			<Str sr="arg8" ve="3"/>
+			<Int sr="arg9" val="1"/>
+		</Action>
+		<Action sr="act7" ve="7">
+			<code>123</code>
+			<on>false</on>
+			<Str sr="arg0" ve="3">am start -a android.settings.APP_NOTIFICATION_SETTINGS --es android.provider.extra.APP_PACKAGE com.adguard.android</Str>
+			<Int sr="arg1" val="2"/>
+			<Int sr="arg2" val="0"/>
+			<Str sr="arg3" ve="3"/>
+			<Str sr="arg4" ve="3"/>
+			<Str sr="arg5" ve="3"/>
+			<Int sr="arg6" val="1"/>
+			<Int sr="arg7" val="0"/>
+			<Int sr="arg8" val="0"/>
+		</Action>
+		<Action sr="act8" ve="7">
+			<code>877</code>
+			<on>false</on>
+			<Str sr="arg0" ve="3">android.settings.USAGE_ACCESS_SETTINGS</Str>
+			<Int sr="arg1" val="0"/>
+			<Str sr="arg2" ve="3"/>
+			<Str sr="arg3" ve="3"/>
+			<Str sr="arg4" ve="3"/>
+			<Str sr="arg5" ve="3"/>
+			<Str sr="arg6" ve="3"/>
+			<Str sr="arg7" ve="3"/>
+			<Str sr="arg8" ve="3"/>
+			<Int sr="arg9" val="1"/>
+		</Action>
+		<Action sr="act9" ve="7">
+			<code>877</code>
+			<on>false</on>
+			<Str sr="arg0" ve="3">android.settings.MANAGE_OVERLAY_PERMISSION</Str>
+			<Int sr="arg1" val="0"/>
+			<Str sr="arg2" ve="3"/>
+			<Str sr="arg3" ve="3">com.adguard.integration</Str>
+			<Str sr="arg4" ve="3"/>
+			<Str sr="arg5" ve="3"/>
+			<Str sr="arg6" ve="3"/>
+			<Str sr="arg7" ve="3"/>
+			<Str sr="arg8" ve="3"/>
+			<Int sr="arg9" val="1"/>
+		</Action>
+	</Task>
+	<Task sr="task231">
+		<cdate>1761019648746</cdate>
+		<edate>1761019648746</edate>
+		<id>231</id>
+		<pri>124</pri>
+		<Action sr="act0" ve="7">
+			<code>48</code>
+			<Str sr="arg0" ve="3">Home</Str>
+			<Int sr="arg1" val="2"/>
+		</Action>
+	</Task>
+	<Task sr="task232">
+		<cdate>1761008732594</cdate>
+		<edate>1761008732594</edate>
+		<id>232</id>
+		<pri>122</pri>
+		<Action sr="act0" ve="7">
+			<code>48</code>
+			<Str sr="arg0" ve="3">Hint Password</Str>
+			<Int sr="arg1" val="2"/>
+		</Action>
+	</Task>
+	<Task sr="task233">
+		<cdate>1760931162702</cdate>
+		<edate>1760931162702</edate>
+		<id>233</id>
+		<pri>108</pri>
+		<Action sr="act0" ve="7">
+			<code>48</code>
+			<Str sr="arg0" ve="3">Home</Str>
+			<Int sr="arg1" val="0"/>
+		</Action>
+		<Action sr="act1" ve="7">
+			<code>47</code>
+			<Str sr="arg0" ve="3">About</Str>
+			<Int sr="arg1" val="5"/>
+			<Int sr="arg10" val="1"/>
+			<Int sr="arg2" val="100"/>
+			<Int sr="arg3" val="100"/>
+			<Int sr="arg4" val="2"/>
+			<Int sr="arg5" val="0"/>
+			<Int sr="arg6" val="0"/>
+			<Int sr="arg7" val="1"/>
+			<Int sr="arg8" val="1"/>
+			<Int sr="arg9" val="1"/>
+		</Action>
+	</Task>
+	<Task sr="task234">
+		<cdate>1761451670097</cdate>
+		<edate>1762945999824</edate>
+		<id>234</id>
+		<pri>120</pri>
+		<Action sr="act0" ve="7">
+			<code>47</code>
+			<Str sr="arg0" ve="3">Hint Password</Str>
+			<Int sr="arg1" val="5"/>
+			<Int sr="arg10" val="1"/>
+			<Int sr="arg2" val="100"/>
+			<Int sr="arg3" val="100"/>
+			<Int sr="arg4" val="2"/>
+			<Int sr="arg5" val="0"/>
+			<Int sr="arg6" val="0"/>
+			<Int sr="arg7" val="1"/>
+			<Int sr="arg8" val="1"/>
+			<Int sr="arg9" val="1"/>
+		</Action>
+	</Task>
+	<Task sr="task235">
+		<cdate>1761008732594</cdate>
+		<edate>1761008732594</edate>
+		<id>235</id>
+		<pri>122</pri>
+		<Action sr="act0" ve="7">
+			<code>48</code>
+			<Str sr="arg0" ve="3">Hint Port</Str>
+			<Int sr="arg1" val="2"/>
+		</Action>
+	</Task>
+	<Task sr="task236">
+		<cdate>1760944361656</cdate>
+		<edate>1761453318535</edate>
+		<id>236</id>
+		<pri>102</pri>
+		<Action sr="act0" ve="7">
+			<code>48</code>
+			<Str sr="arg0" ve="3">Home</Str>
+			<Int sr="arg1" val="2"/>
+		</Action>
+		<Action sr="act1" ve="7">
+			<code>46</code>
+			<se>false</se>
+			<Str sr="arg0" ve="3">Settings</Str>
+		</Action>
+		<Action sr="act2" ve="7">
+			<code>50</code>
+			<label>Restore settings</label>
+			<Str sr="arg0" ve="3">Settings</Str>
+			<Str sr="arg1" ve="3">type</Str>
+			<Int sr="arg2">
+				<var>%TYPEN</var>
+			</Int>
+		</Action>
+		<Action sr="act3" ve="7">
+			<code>50</code>
+			<Str sr="arg0" ve="3">Settings</Str>
+			<Str sr="arg1" ve="3">vpn_as_vpn</Str>
+			<Int sr="arg2">
+				<var>%VPNONLY</var>
+			</Int>
+		</Action>
+		<Action sr="act4" ve="7">
+			<code>50</code>
+			<Str sr="arg0" ve="3">Settings</Str>
+			<Str sr="arg1" ve="3">quiet</Str>
+			<Int sr="arg2">
+				<var>%QUIETN</var>
+			</Int>
+		</Action>
+		<Action sr="act5" ve="7">
+			<code>51</code>
+			<Str sr="arg0" ve="3">Settings</Str>
+			<Str sr="arg1" ve="3">password</Str>
+			<Int sr="arg2" val="0"/>
+			<Str sr="arg3" ve="3">%PASS</Str>
+			<Str sr="arg4" ve="3"/>
+		</Action>
+		<Action sr="act6" ve="7">
+			<code>47</code>
+			<Str sr="arg0" ve="3">Settings</Str>
+			<Int sr="arg1" val="5"/>
+			<Int sr="arg10" val="1"/>
+			<Int sr="arg2" val="100"/>
+			<Int sr="arg3" val="100"/>
+			<Int sr="arg4" val="2"/>
+			<Int sr="arg5" val="0"/>
+			<Int sr="arg6" val="0"/>
+			<Int sr="arg7" val="1"/>
+			<Int sr="arg8" val="1"/>
+			<Int sr="arg9" val="1"/>
+		</Action>
+		<Action sr="act7" ve="7">
+			<code>49</code>
+			<se>false</se>
+			<Str sr="arg0" ve="3">Home</Str>
+		</Action>
+	</Task>
+	<Task sr="task241">
+		<cdate>1761008732594</cdate>
+		<edate>1761008732594</edate>
+		<id>241</id>
+		<pri>122</pri>
+		<Action sr="act0" ve="7">
+			<code>48</code>
+			<Str sr="arg0" ve="3">Hint Type</Str>
+			<Int sr="arg1" val="2"/>
+		</Action>
+	</Task>
+	<Task sr="task242">
+		<cdate>1761008732594</cdate>
+		<edate>1761008732594</edate>
+		<id>242</id>
+		<pri>102</pri>
+		<Action sr="act0" ve="7">
+			<code>48</code>
+			<Str sr="arg0" ve="3">No AdGuard</Str>
+			<Int sr="arg1" val="2"/>
+		</Action>
+	</Task>
+</TaskerData>
