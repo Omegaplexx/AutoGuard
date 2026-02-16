@@ -1,23 +1,25 @@
 # AdGuard + VPN
 
-**Documentation is still in development**
+**AutoGuard** is a [Tasker](https://play.google.com/store/apps/details?id=net.dinglisch.android.taskerm) project and standalone app that automates [AdGuard for Android](https://adguard.com/adguard-android/overview.html) to bring together VPN and ad blocker on non-rooted devices.
 
-AutoGuard is a [Tasker](https://play.google.com/store/apps/details?id=net.dinglisch.android.taskerm) project and Android app that automates [AdGuard for Android](https://adguard.com/adguard-android/overview.html) to bring together VPN and ad blocker on non-rooted devices.
+## The issue
+If you're using AdGuard in *Local VPN* mode, you cannot use any other VPN apps at the same time.
 
-**But isn't there [AdGuard VPN](https://play.google.com/store/apps/details?id=com.adguard.vpn) already?**
+**But isn't there [AdGuard VPN](https://play.google.com/store/apps/details?id=com.adguard.vpn) that can work with it?**
 
-Sure, it can work with AdGuard in Integrated mode, but what if you use [Hiddify](https://github.com/hiddify/hiddify-app)/[NekoBox](https://github.com/MatsuriDayo/NekoBoxForAndroid)/[Shadowsocks](https://github.com/shadowsocks/shadowsocks-android)/other client? AutoGuard acts as an artificial Integrated mode for these apps.
+Sure, it works with AdGuard in *Integrated mode*, but what if you use [Hiddify](https://github.com/hiddify/hiddify-app)/[NekoBox](https://github.com/MatsuriDayo/NekoBoxForAndroid)/[Shadowsocks](https://github.com/shadowsocks/shadowsocks-android)/other client? AutoGuard acts as an *Artificial Integrated mode* for these apps.
 
 ## It doesn't support any VPN
-**Only those VPN apps are supported that can work in a proxy mode!**
+
+**Only those VPN clients (apps) are supported that can work in a proxy mode!**
 
 This means that any one-button commercial VPNs from Play Store, such as Planet VPN, Turbo VPN, ExpressVPN, NordVPN and so on, **are not supported**. Unfortunately, I can't do anything about it.
 
 ## How to use
- 
-1. Install AutoGuard as app / import it to Tasker
-2. Give it permissions
-3. Add it to AdGuard's filtering exclusions
+
+1. [Download](https://github.com/Omegaplexx/AutoGuard/releases) and install AutoGuard as an app / import it to Tasker
+2. Give it permission to work in background
+3. Add it and your VPN app to AdGuard's filtering exclusions
 4. [Enter the AdGuard automation password](#password)
 5. [Enter your VPN app's proxy server type and port](#type-and-port)
 
@@ -38,19 +40,20 @@ The password can simply be <b>1234</b>. It doesn't have to be that long.
 
 ### Type and port
 
-Switch your VPN app to the **proxy only** mode, then enter its inbound local proxy type and port in AutoGuard.
+Switch your VPN client to the **proxy only** mode, then enter its inbound local proxy type and port into AutoGuard.
 
 <details>
 <summary>Shadowsocks-based clients</summary>
+<br>
 For Shadowsocks, SagerNet, Matsuri, NekoBox, husi, Exclave etc.
 <br><br>
 Exclave as an example.
 <br><br>
-Open sidebar, go to Settings. Set Service mode to <b>Proxy only</b>.
+Open sidebar, go to <b>Settings</b>. Set <b>Service mode</b> to <b>Proxy only</b>.
 
 ![1000118844](https://github.com/user-attachments/assets/90fd4cd6-dd3c-42aa-986b-f8335f8f1586)
 
-Scroll down, check your SOCKS5 port. You can also enable HTTP server if you want.
+Scroll down, check your <b>SOCKS5 port</b>. You can also enable HTTP server if you want.
 
 ![1000118849](https://github.com/user-attachments/assets/25a935ef-636a-4847-a413-071e1c7d783c)
 
@@ -60,12 +63,57 @@ Enter it into AutoGuard. You can enter HTTP server port if you enabled it.
 </details>
 
 <details>
+<summary>v2rayNG</summary>
+<br>
+Open sidebar, go to <b>Settings</b>, scroll down. Remember the value in <b>Local proxy port</b>.
+ 
+![1000129802](https://github.com/user-attachments/assets/6fd0fa23-2c61-4ac1-af72-a77b275e96dd)
+
+In <b>Mode</b> select <b>Proxy only</b>.
+![1000129803](https://github.com/user-attachments/assets/5790980d-0bc0-412c-96f4-430e962260f1)
+
+Enter the port to AutoGuard, set HTTP/SOCKS4/SOCKS5 as type.
+![1000129805](https://github.com/user-attachments/assets/1aaacaf6-138d-4b40-9a6d-4293b297a046)
+</details>
+
+<details>
+<summary>Hiddify</summary>
+<br>
+Open sidebar, go to <b>Config Options</b>, scroll down. In <b>Service Mode</b> select <b>Proxy Service Only</b> and remember the value in <b>Mixed Port</b>.
+
+![1000130791](https://github.com/user-attachments/assets/b46ba1d7-62e8-4af7-847d-0ad690882385)
+
+Enter it to AutoGuard. Choose HTTP/SOCKS4/SOCKS5 as type.
+![1000130792](https://github.com/user-attachments/assets/bab3e8a4-5b6d-4993-ac30-a709431962f2)
+</details>
+
+<details>
+<summary>Karing</summary>
+<br>
+Open <b>Settings</b>, disable <b>Novice Mode</b>. Scroll down, select <b>TUN</b> and disable it.
+
+![1000130827](https://github.com/user-attachments/assets/e01d8708-96cf-4474-b08a-8745bc848293)
+![1000130828](https://github.com/user-attachments/assets/90e47281-c09c-4eba-8734-3208d25dfaf6)
+![1000130829](https://github.com/user-attachments/assets/c604aadf-59f8-4073-b414-1ab7106cbc8a)
+
+Return to <b>Settings</b>, select <b>Port</b>.
+![1000130832](https://github.com/user-attachments/assets/a5d9daf3-ceaa-430d-8e92-ae8bd4f84421)
+
+Enter to AutoGuard the <b>Rule Based</b> one or the <b>Proxy All</b> port.
+![1000130834](https://github.com/user-attachments/assets/b17747dd-5d71-4dc7-bcc9-73978ce2cc74)
+
+Choose HTTP/SOCKS4/SOCKS5 as the type. HTTPS is not supported.
+![1000130837](https://github.com/user-attachments/assets/73e89811-3fc4-445a-9243-e09b07da2eb2)
+</details>
+
+<details>
 <summary>WG Tunnel</summary>
-In Settings, set App mode to <b>Proxy</b>.
+<br>
+In <b>Settings</b>, set <b>App mode</b> to <b>Proxy</b>.
  
 ![1000129843](https://github.com/user-attachments/assets/3bc33db8-7486-4200-8df2-3f7238d94f60)
 
-Tap on App mode, enable SOCKS5 and/or HTTP proxy type(s). Enter `127.0.0.1:` and any port you want.
+Tap on <b>App mode</b>, enable SOCKS5 and/or HTTP proxy type(s). Enter `127.0.0.1:` and any port you want.
 
 ![1000129844](https://github.com/user-attachments/assets/d5dac1a1-7ea6-4ff5-bab2-c630a01cfb9f)
 
@@ -76,6 +124,7 @@ Enter type and port to AutoGuard.
 
 <details>
 <summary>InviZible Pro</summary>
+<br>
 AdGuard can be integrated with Tor.
 <br><br>
 On the main screen, in the three-dots dropdown menu select <b>Proxy Mode</b>.
@@ -85,16 +134,30 @@ On the main screen, in the three-dots dropdown menu select <b>Proxy Mode</b>.
 Open sidebar, go to <b>Tor Settings</b>. Scroll down to the proxy options. Enable SOCKS or/and HTTP type(s).
 ![1000129833](https://github.com/user-attachments/assets/f3ae785c-d2c9-4196-a447-4892124e26cb)
 
-Click on SOCKS Port or HTTP Port to see it.
+Tap on <b>SOCKS Port</b> or <b>HTTP Tunnel Port</b> to see it.
 ![1000129832](https://github.com/user-attachments/assets/1ea607e3-a40b-4224-bffa-c013f6342961)
 
-Enter it to AutoGuard. Choose SOCKS4, SOCKS5 or HTTP for proxy type. HTTPS is not supported by InviZible Pro.
+Enter it into AutoGuard. Choose SOCKS4, SOCKS5 or HTTP as proxy type. HTTPS is not supported by InviZible Pro.
 ![1000130700](https://github.com/user-attachments/assets/d530f6ca-24a1-4216-9dba-7a4b2d81ab27)
 </details>
 
-## Support
+<details>
+<summary>ByeByeDPI</summary>
+<br>
+Go to <b>Settings</b>, set <b>Mode</b> to <b>Proxy</b>.
+ 
+![1000130809](https://github.com/user-attachments/assets/77f6c87a-1049-4c11-9720-32c9f0ce19e0)
 
-AutoGuard's APK supports Android 5.0 (Lollipop) and above. It can work with AdGuard v4.0+ and with old versions (v3.6.11 and below). Enable Legacy mode for v3 support.
+Check the value in <b>Port</b>. Enable <b>HTTP proxy</b> if you want.
+![1000130810](https://github.com/user-attachments/assets/4cf29476-05d3-48d5-bcdc-9be2b724bd62)
+
+Enter the port to AutoGuard and select SOCKS5/SOCKS4 as server type. You can select HTTP if you enabled it.
+![1000130819](https://github.com/user-attachments/assets/7927a2b0-5ca9-4a68-bc63-5c708604534f)
+</details>
+
+## AdGuard v3.x support (Legacy)
+
+AutoGuard can work with with old AdGuard versions (v3.6.11 and below). Enable **Legacy mode** in AutoGuard's Advanced Settings.
 
 ## Screenshots
 
