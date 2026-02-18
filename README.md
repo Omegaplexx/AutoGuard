@@ -5,7 +5,7 @@
 ## The issue
 If you're using AdGuard in *Local VPN* mode, you cannot use any other VPN apps at the same time.
 
-**But isn't there [AdGuard VPN](https://play.google.com/store/apps/details?id=com.adguard.vpn) that can work with it?**
+You may say, "But [AdGuard VPN](https://play.google.com/store/apps/details?id=com.adguard.vpn) can work with it."
 
 Sure, it works with AdGuard in *Integrated mode*, but what if you use [Hiddify](https://github.com/hiddify/hiddify-app)/[NekoBox](https://github.com/MatsuriDayo/NekoBoxForAndroid)/[Shadowsocks](https://github.com/shadowsocks/shadowsocks-android)/other client? AutoGuard acts as an *Artificial Integrated mode* for these apps.
 
@@ -17,7 +17,7 @@ This means that any one-button commercial VPNs from Play Store, such as Planet V
 
 ## How to use
 
-1. [Download](https://github.com/Omegaplexx/AutoGuard/releases) and install AutoGuard as an app / import it to Tasker
+1. [Install AutoGuard as an app](https://github.com/Omegaplexx/AutoGuard/releases/download/release/AutoGuard.v1.0.apk) / [import it to Tasker](https://taskernet.com/shares/?user=AS35m8lewGrrfIKiVE6Udvw%2FuM8FTsRvubfS55EvDtqqmwbbZ2yvPcuUOF5RJL0ubo8B9Q%3D%3D&id=Project%3AAutoGuard%3A+AdGuard+%2B+VPN)
 2. Give it permission to work in background
 3. Add it and your VPN app to AdGuard's filtering exclusions
 4. [Enter the AdGuard automation password](#password)
