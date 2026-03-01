@@ -1,6 +1,6 @@
 # AdGuard + VPN
 
-**AutoGuard** is a [Tasker](https://play.google.com/store/apps/details?id=net.dinglisch.android.taskerm) project and standalone app that automates [AdGuard for Android](https://adguard.com/adguard-android/overview.html) to bring together VPN and ad blocker on non-rooted devices.
+**AutoGuard** is a [Tasker](https://play.google.com/store/apps/details?id=net.dinglisch.android.taskerm) project that automates [AdGuard for Android](https://adguard.com/adguard-android/overview.html) to bring together VPN and ad blocker on non-rooted devices.
 
 ## The issue
 If you're using AdGuard in *Local VPN* mode, you cannot use any other VPN apps at the same time.
@@ -11,15 +11,15 @@ Sure, it works with AdGuard in *Integrated mode*, but what if you use [Hiddify](
 
 ## It doesn't support any VPN
 
-**Only those VPN clients (apps) are supported that can work in a proxy mode!**
+**Only those VPN clients (apps) are supported that can work in proxy mode!**
 
 This means that any one-button commercial VPNs from Play Store, such as Planet VPN, Turbo VPN, ExpressVPN, NordVPN and so on, **are not supported**. Unfortunately, I can't do anything about it.
 
 ## How to use
 
-1. [Install AutoGuard as an app](https://github.com/Omegaplexx/AutoGuard/releases/download/release/AutoGuard.v1.0.apk) / [import it to Tasker](https://taskernet.com/shares/?user=AS35m8lewGrrfIKiVE6Udvw%2FuM8FTsRvubfS55EvDtqqmwbbZ2yvPcuUOF5RJL0ubo8B9Q%3D%3D&id=Project%3AAutoGuard%3A+AdGuard+%2B+VPN)
+1. [Import AutoGuard to Tasker](https://taskernet.com/shares/?user=AS35m8lewGrrfIKiVE6Udvw%2FuM8FTsRvubfS55EvDtqqmwbbZ2yvPcuUOF5RJL0ubo8B9Q%3D%3D&id=Project%3AAutoGuard%3A+AdGuard+%2B+VPN)
 2. Give it permission to work in background
-3. Add it and your VPN app to AdGuard's filtering exclusions
+3. Add Tasker and your VPN app to AdGuard's filtering exclusions
 4. [Enter the AdGuard automation password](#password)
 5. [Enter your VPN app's proxy server type and port](#type-and-port)
 
@@ -72,18 +72,19 @@ Open sidebar, go to <b>Settings</b>, scroll down. Remember the value in <b>Local
 In <b>Mode</b> select <b>Proxy only</b>.
 ![1000129803](https://github.com/user-attachments/assets/5790980d-0bc0-412c-96f4-430e962260f1)
 
-Enter the port to AutoGuard, set HTTP/SOCKS4/SOCKS5 as type.
+Enter the port to AutoGuard, set any type you want.
 ![1000129805](https://github.com/user-attachments/assets/1aaacaf6-138d-4b40-9a6d-4293b297a046)
 </details>
 
 <details>
 <summary>Hiddify</summary>
 <br>
-Open sidebar, go to <b>Config Options</b>, scroll down. In <b>Service Mode</b> select <b>Proxy Service Only</b> and remember the value in <b>Mixed Port</b>.
+Open <i>Settings → Inbound</i>. In <b>Service mode</b> select <b>Proxy service only</b> and remember the value in <b>Mixed port</b>.
 
-![1000130791](https://github.com/user-attachments/assets/b46ba1d7-62e8-4af7-847d-0ad690882385)
+![1000131269](https://github.com/user-attachments/assets/4f524b0f-afd0-435d-88a3-0ea2617dff55)
 
-Enter it to AutoGuard. Choose HTTP/SOCKS4/SOCKS5 as type.
+
+Enter it to AutoGuard. Choose any type you want.
 ![1000130792](https://github.com/user-attachments/assets/bab3e8a4-5b6d-4993-ac30-a709431962f2)
 </details>
 
@@ -102,7 +103,7 @@ Return to <b>Settings</b>, select <b>Port</b>.
 Enter to AutoGuard the <b>Rule Based</b> one or the <b>Proxy All</b> port.
 ![1000130834](https://github.com/user-attachments/assets/b17747dd-5d71-4dc7-bcc9-73978ce2cc74)
 
-Choose HTTP/SOCKS4/SOCKS5 as the type. HTTPS is not supported.
+Choose any type.
 ![1000130837](https://github.com/user-attachments/assets/73e89811-3fc4-445a-9243-e09b07da2eb2)
 </details>
 
@@ -137,7 +138,7 @@ Open sidebar, go to <b>Tor Settings</b>. Scroll down to the proxy options. Enabl
 Tap on <b>SOCKS Port</b> or <b>HTTP Tunnel Port</b> to see it.
 ![1000129832](https://github.com/user-attachments/assets/1ea607e3-a40b-4224-bffa-c013f6342961)
 
-Enter it into AutoGuard. Choose SOCKS4, SOCKS5 or HTTP as proxy type. HTTPS is not supported by InviZible Pro.
+Enter it into AutoGuard.
 ![1000130700](https://github.com/user-attachments/assets/d530f6ca-24a1-4216-9dba-7a4b2d81ab27)
 </details>
 
@@ -155,9 +156,40 @@ Enter the port to AutoGuard and select SOCKS5/SOCKS4 as server type. You can sel
 ![1000130819](https://github.com/user-attachments/assets/7927a2b0-5ca9-4a68-bc63-5c708604534f)
 </details>
 
+<details>
+<summary>Clash Meta for Android Alpha</summary>
+<br>
+Open <i>Settings → Network</i>, disable <b>Route System Traffic</b>.
+
+![1000131239](https://github.com/user-attachments/assets/69190591-4d05-4a42-8877-92ded53a1c24)
+Go to <i>Settings → Override</i>, choose any <b>HTTP Port</b> and <b>Socks Port</b> you want.
+![1000131240](https://github.com/user-attachments/assets/40d7fae1-bf54-4934-8bc6-95d2af50eb1b)
+Enter it to AutoGuard. Both SOCKS5/4 types are good for Socks Port.
+![1000131259](https://github.com/user-attachments/assets/ac2e1616-c663-4678-98bf-1633afd7ce06)
+</details>
+
+<details>
+<summary>Orbot</summary>
+<br>
+AdGuard + Tor
+<br><br>
+Start connection to see SOCKS5/HTTP ports.
+ 
+![1000131207](https://github.com/user-attachments/assets/98e6edc0-84eb-4f12-b920-62f4efa0d28b)
+
+Go to <i>More</i> tab. Remember one of the port values, then go to <i>Orbot Settings → General</i>
+![1000131211](https://github.com/user-attachments/assets/4d834998-6144-4aac-8cfb-93a745eb99b6)
+
+Enable <b>Power User Mode</b>. It's equivalent to Proxy Only Mode.
+![1000131218](https://github.com/user-attachments/assets/1bdaa497-5643-4ef2-a5e5-3460a0cb359d)
+
+Enter one of the port values to AutoGuard and select the appropriate type.
+![1000131225](https://github.com/user-attachments/assets/81ca845f-5adb-42cf-b535-c34c63859ad8)
+</details>
+
 ## AdGuard v3.x support (Legacy)
 
-AutoGuard can work with with old AdGuard versions (v3.6.11 and below). Enable **Legacy mode** in AutoGuard's Advanced Settings.
+AutoGuard can work with old AdGuard versions (v3.6.11 and below). Enable **Legacy mode** in AutoGuard's Advanced Settings.
 
 ## Screenshots
 
