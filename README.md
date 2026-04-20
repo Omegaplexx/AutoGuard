@@ -1,3 +1,5 @@
+<p align="center"> <img width="100" height="100" alt="1000130680" src="https://github.com/user-attachments/assets/25274802-5b61-467e-bbac-805937e21712" /></p>
+
 # AdGuard + VPN
 
 **AutoGuard** is a [Tasker](https://play.google.com/store/apps/details?id=net.dinglisch.android.taskerm) project that automates [AdGuard for Android](https://adguard.com/adguard-android/overview.html) to bring together VPN and ad blocker on non-rooted devices.
