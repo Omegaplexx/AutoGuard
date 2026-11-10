@@ -1,21 +1,44 @@
 <p align="center"> <img width="100" height="100" alt="1000130680" src="https://github.com/user-attachments/assets/25274802-5b61-467e-bbac-805937e21712" /></p>
 
-# AdGuard + VPN
+# AutoGuard
 
-**AutoGuard** is a [Tasker](https://play.google.com/store/apps/details?id=net.dinglisch.android.taskerm) project that automates [AdGuard for Android](https://adguard.com/adguard-android/overview.html) to bring together VPN and ad blocker on non-rooted devices.
+A [Tasker](https://play.google.com/store/apps/details?id=net.dinglisch.android.taskerm) project that automates [AdGuard for Android](https://adguard.com/adguard-android/overview.html) to bring together VPN and ad blocking on non-rooted devices.
 
 ## The issue
-If you're using AdGuard in *Local VPN* mode, you cannot use any other VPN apps at the same time.
+If you're using AdGuard in Local VPN mode, you cannot use any other VPN apps at the same time.
 
 You may say, "But [AdGuard VPN](https://play.google.com/store/apps/details?id=com.adguard.vpn) can work with it."
 
-Sure, it works with AdGuard in *Integrated mode*, but what if you use [Hiddify](https://github.com/hiddify/hiddify-app)/[NekoBox](https://github.com/MatsuriDayo/NekoBoxForAndroid)/[Shadowsocks](https://github.com/shadowsocks/shadowsocks-android)/other client? AutoGuard acts as an *Artificial Integrated mode* for these apps.
+Sure, it works with AdGuard in Integrated mode, but what if you use [Hiddify](https://github.com/hiddify/hiddify-app)/[NekoBox](https://github.com/MatsuriDayo/NekoBoxForAndroid)/[Shadowsocks](https://github.com/shadowsocks/shadowsocks-android)/other client? AutoGuard acts as an artificial Integrated mode for these apps.
 
-## It doesn't support any VPN
+## How AdGuard and AdGuard VPN integration works
 
-**Only those VPN clients (apps) are supported that can work in proxy mode!**
+When you enable both apps, **AdGuard VPN** automatically **switches to Proxy only mode** and sends its proxy details (type and port) to AdGuard. **AdGuard** receives this information and **configures filtering through that proxy**. The traffic flow looks like this:
 
-This means that any one-button commercial VPNs from Play Store, such as Planet VPN, Turbo VPN, ExpressVPN, NordVPN and so on, **are not supported**. Unfortunately, I can't do anything about it.
+*Device → AdGuard → proxy → AdGuard VPN → Internet*
+
+When you turn off AdGuard VPN, it notifies AdGuard again, and AdGuard removes the proxy from the chain:
+
+*Device → AdGuard → Internet*
+
+**The proxy between the two apps is the glue**. One app launches it to receive traffic, while the other forwards the filtered traffic to it.
+
+## How AutoGuard works
+
+AutoGuard is an **advanced Integration Mode**. It sends signals to AdGuard when you start or stop a connection in your VPN app.
+
+1. Switch your VPN client to Proxy only mode
+2. Enter its proxy details (type and port) in AutoGuard
+
+Now, **when you enable your VPN app**, the proxy launches inside it. **AutoGuard** detects this and **sends a signal to AdGuard** so it can reconfigure filtering through that proxy.
+
+*When VPN is on → proxy in your app is running → AutoGuard sends an intent to AdGuard → AdGuard configures filtering like below*
+
+*Device → AdGuard → proxy → your VPN app → Internet*
+
+*When VPN is off → proxy is stopped → AutoGuard sends an intent → AdGuard configures filtering*
+
+*Device → AdGuard → Internet*
 
 ## How to use
 
